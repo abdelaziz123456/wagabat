@@ -1,0 +1,9 @@
+const CustomColors = {
+  blue100: '#45B8E9',
+  pink100: '#F4739E',
+  pink60: '#FDD3E1',
+  dark100: '#292D32',
+  dark90: '#46505D',
+  dark80: '#6A798A',
+};
+export default CustomColors;
