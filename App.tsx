@@ -9,11 +9,11 @@ function App() {
   const animatableRef = useRef(null);
 
   const bounceLeft = () => {
-    animatableRef.current?.bounceInLeft();
+    animatableRef.current?.fadeInLeft(500);
   };
 
   const bounceRight = () => {
-    animatableRef.current?.bounceInRight();
+    animatableRef.current?.fadeInRight(500);
   };
   const screensData = {
     1: {
