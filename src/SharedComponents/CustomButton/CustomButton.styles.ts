@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 import CustomColors from '../../Utiles/constants';
 const styles = StyleSheet.create({
   container: {
-    minHeight: 68,
-    minWidth: 183,
+    minHeight: 43,
+    minWidth: 151,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 20,
