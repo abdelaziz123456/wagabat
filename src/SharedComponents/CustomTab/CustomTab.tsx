@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 import React, {useState} from 'react';
-import CustomColors from '../../Utiles/constants';
+import {CustomColors} from '../../Utiles/constants';
 import CustomButton from '../CustomButton/CustomButton';
 import styles from './CustomTab.styles';
 
@@ -10,18 +10,22 @@ type Props = {
 export default function CustomTab({toggleHandler}: Props) {
   const [active, setActive] = useState('left');
   console.log('renderedddd');
-  function pressHandler() {
-    if (active == 'left') {
-      setActive('right');
-    } else {
+  function LeftPressHandler() {
+    if (active !== 'left') {
       setActive('left');
+      toggleHandler();
     }
-    toggleHandler();
+  }
+  function RightPressHandler() {
+    if (active !== 'right') {
+      setActive('right');
+      toggleHandler();
+    }
   }
   return (
     <View style={styles.mainContainer}>
       <CustomButton
-        pressHandler={pressHandler}
+        pressHandler={LeftPressHandler}
         btnTheme={'red'}
         CustomStyles={
           active == 'left' ? styles.activeBtn : styles.disActiveBtn
@@ -35,7 +39,7 @@ export default function CustomTab({toggleHandler}: Props) {
         </Text>
       </CustomButton>
       <CustomButton
-        pressHandler={pressHandler}
+        pressHandler={RightPressHandler}
         btnTheme={'red'}
         CustomStyles={
           active == 'right' ? styles.activeBtn : styles.disActiveBtn

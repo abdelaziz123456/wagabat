@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
-import CustomColors from '../../Utiles/constants';
+import {CustomColors} from '../../Utiles/constants';
+
 export default StyleSheet.create({
   mainContainer: {
     justifyContent: 'center',

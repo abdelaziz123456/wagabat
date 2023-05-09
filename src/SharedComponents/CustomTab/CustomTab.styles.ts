@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import CustomColors from '../../Utiles/constants';
+import {CustomColors} from '../../Utiles/constants';
 export default StyleSheet.create({
   mainContainer: {
     backgroundColor: CustomColors.pink60,
@@ -19,5 +19,6 @@ export default StyleSheet.create({
   disActiveBtn: {
     backgroundColor: CustomColors.pink60,
     borderRadius: 90,
+    width: 177,
   },
 });

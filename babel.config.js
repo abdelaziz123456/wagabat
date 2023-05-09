@@ -1,3 +1,16 @@
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
+  plugins: [
+    //if you already have other plugin just paste this lines below
+    [
+      'module-resolver',
+      {
+        alias: {
+          '@SharedComponents': './src/SharedComponents',
+          '@Screens': './src/Screens',
+          '@Utiles': './src/Utiles',
+        },
+      },
+    ],
+  ],
 };

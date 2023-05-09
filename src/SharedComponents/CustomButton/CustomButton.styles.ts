@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import CustomColors from '../../Utiles/constants';
+import {CustomColors} from '../../Utiles/constants';
 const styles = StyleSheet.create({
   container: {
     minHeight: 43,
