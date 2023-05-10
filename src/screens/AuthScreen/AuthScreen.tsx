@@ -1,23 +1,54 @@
-import {View, Text} from 'react-native';
-import React from 'react';
-
+import React, {useEffect, useState} from 'react';
 import styles from './AuthScreen.styles';
-
-//import {CustomTab} from '@SharedComponents/index';
-import {CustomInput, CustomTab} from '@SharedComponents/index';
+import {KeyboardAvoidingView, ScrollView, Text} from 'react-native';
+import {CustomButton, CustomTab} from '@SharedComponents/index';
+import Login from './MiniComponents/Login';
+import SignUp from './MiniComponents/SignUp';
+import {validationHandler} from './utiles';
 export default function AuthScreen() {
+  const [activeTab, setActiveTab] = useState(true);
+  const [enteredData, setEnteredData] = useState({
+    email: '',
+    password: '',
+    phone: '',
+    passwordConfirm: '',
+    name: '',
+  });
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    validationHandler(enteredData, activeTab, setIsValid);
+  }, [enteredData, activeTab]);
   return (
-    <View style={styles.mainContainer}>
-      <Text style={styles.title}>Welcome !</Text>
-      <Text style={styles.subTitle}>Sign Up or Login to Your Account</Text>
-      <CustomTab toggleHandler={() => console.log('toggled')} />
-      <CustomInput
-        labelText="Password"
-        inputConfig={{
-          secureTextEntry: true,
-          placeholder: 'Enter Your Password',
-        }}
-      />
-    </View>
+    <KeyboardAvoidingView style={styles.avoidingView}>
+      <ScrollView contentContainerStyle={styles.mainContainer}>
+        <Text style={styles.title}>Welcome !</Text>
+        <Text style={styles.subTitle}>Sign Up or Login to Your Account</Text>
+        <CustomTab
+          toggleHandler={() => {
+            setEnteredData({
+              email: '',
+              password: '',
+              phone: '',
+              passwordConfirm: '',
+              name: '',
+            });
+            setActiveTab(!activeTab);
+          }}
+        />
+        {activeTab ? (
+          <Login enteredData={enteredData} setEnteredData={setEnteredData} />
+        ) : (
+          <SignUp enteredData={enteredData} setEnteredData={setEnteredData} />
+        )}
+      </ScrollView>
+      <CustomButton
+        disabled={!isValid}
+        CustomStyles={styles.customBtn}
+        pressHandler={() => {}}
+        btnTheme={isValid ? 'blue' : 'disabledBlue'}>
+        <Text style={styles.btnText}>{activeTab ? 'Login' : 'Sign Up'}</Text>
+      </CustomButton>
+    </KeyboardAvoidingView>
   );
 }

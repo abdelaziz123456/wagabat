@@ -14,11 +14,11 @@ export default StyleSheet.create({
   activeBtn: {
     backgroundColor: CustomColors.pink100,
     borderRadius: 90,
-    width: 177,
+    width: 170,
   },
   disActiveBtn: {
     backgroundColor: CustomColors.pink60,
     borderRadius: 90,
-    width: 177,
+    width: 170,
   },
 });

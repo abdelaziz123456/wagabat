@@ -1,5 +1,6 @@
+import {CustomColors} from '@Utiles/constants';
 import {StyleSheet} from 'react-native';
-import {CustomColors} from '../../Utiles/constants';
+
 const styles = StyleSheet.create({
   container: {
     minHeight: 43,
@@ -19,6 +20,9 @@ const styles = StyleSheet.create({
   },
   white: {
     backgroundColor: 'white',
+  },
+  disabledBlue: {
+    backgroundColor: CustomColors.blue60,
   },
 });
 export default styles;

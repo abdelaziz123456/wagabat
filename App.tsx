@@ -13,9 +13,9 @@ import React from 'react';
 function App() {
   return (
     <>
-      {/* <AuthScreen /> */}
+      <AuthScreen />
 
-      <WelcomeScreen />
+      {/* <WelcomeScreen /> */}
     </>
   );
 }

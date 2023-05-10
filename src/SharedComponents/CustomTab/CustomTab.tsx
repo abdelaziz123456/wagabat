@@ -9,7 +9,7 @@ type Props = {
 };
 export default function CustomTab({toggleHandler}: Props) {
   const [active, setActive] = useState('left');
-  console.log('renderedddd');
+
   function LeftPressHandler() {
     if (active !== 'left') {
       setActive('left');
