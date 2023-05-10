@@ -2,7 +2,11 @@ import {StyleSheet} from 'react-native';
 import {CustomColors} from '../../Utiles/constants';
 
 export default StyleSheet.create({
-  avoidingView: {height: '100%', paddingHorizontal: 16},
+  avoidingView: {
+    height: '100%',
+    paddingHorizontal: 16,
+    backgroundColor: 'white',
+  },
   mainContainer: {
     alignItems: 'center',
     paddingTop: 16,

@@ -2,6 +2,7 @@
 import {AuthScreen, WelcomeScreen} from '@Screens/index';
 // import {TestScreen} from '@Screens/TestScreen/TestScreen';
 import React from 'react';
+import NavWrapper from './src/Providers/NavWrapper';
 // import {View} from 'react-native';
 //import AuthScreen from './src/Screens/AuthScreen/AuthScreen';
 //import WelcomeScreen from '@Sc';
@@ -13,8 +14,8 @@ import React from 'react';
 function App() {
   return (
     <>
-      <AuthScreen />
-
+      <NavWrapper />
+      {/* <AuthScreen /> */}
       {/* <WelcomeScreen /> */}
     </>
   );

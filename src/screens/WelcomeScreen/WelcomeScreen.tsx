@@ -1,7 +1,7 @@
 import {View, Text, Image} from 'react-native';
 import React, {useState, useRef} from 'react';
 import * as Animatable from 'react-native-animatable';
-
+import {useNavigation} from '@react-navigation/native';
 import {CustomButton} from '@SharedComponents/index';
 import {screensData} from './utiles';
 import styles from './WelcomeScreen.styles';
@@ -10,7 +10,7 @@ export default function WelcomeScreen() {
   const animatableRef = useRef(null);
   const textRef = useRef(null);
   const contentRef = useRef(null);
-
+  const navigation = useNavigation();
   const bounceRight = () => {
     animatableRef.current?.fadeInRight(500);
     textRef.current?.fadeInRight(500);
@@ -35,10 +35,7 @@ export default function WelcomeScreen() {
       <View style={{flexDirection: 'row', justifyContent: 'center'}}>
         <CustomButton
           pressHandler={() => {
-            if (currScreen !== 3) {
-              setCurrentScreen(3);
-              bounceRight();
-            }
+            navigation.navigate('auth');
           }}
           //CustomStyles={{backgroundColor: 'red'}}
           btnTheme={'white'}
@@ -56,6 +53,9 @@ export default function WelcomeScreen() {
             if (currScreen < 3) {
               setCurrentScreen(currScreen + 1);
               bounceRight();
+            } else {
+              //  navigation.dispatch(StackActions.replace('auth'));
+              navigation.navigate('auth');
             }
           }}
           //CustomStyles={{backgroundColor: 'red'}}
