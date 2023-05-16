@@ -7,8 +7,10 @@ module.exports = {
       {
         alias: {
           '@SharedComponents': './src/SharedComponents',
+          '@Components': './src/Components',
           '@Screens': './src/Screens',
           '@Utiles': './src/Utiles',
+          '@assets': './assets',
         },
       },
     ],

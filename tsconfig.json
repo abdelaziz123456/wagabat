@@ -4,11 +4,13 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-     // "*": ["src/*"],
-     "@common/*": ["./src/common/*"],
+      // "*": ["src/*"],
+      "@common/*": ["./src/common/*"],
       "@SharedComponents/*": ["./src/SharedComponents/*"],
+      "@Components/*": ["./src/Components/*"],
       "@Screens/*": ["./src/Screens/*"],
-      "@Utiles/*":["./src/Utiles/*"]
+      "@Utiles/*": ["./src/Utiles/*"],
+      "@assets/*": ["./assets*"]
     }
   }
 }

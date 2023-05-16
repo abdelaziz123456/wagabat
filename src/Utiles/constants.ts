@@ -1,4 +1,6 @@
 export const CustomColors = {
+  bgGrey: '#f5f5fa',
+  textSecondary: '#808089',
   light80: '#EFF2F5',
   blue100: '#45B8E9',
   blue60: '#BBE8FB',

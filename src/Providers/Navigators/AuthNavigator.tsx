@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {WelcomeScreen} from '@Screens/index';
+import {DeliveryScreen, HomeScreen, WelcomeScreen} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
@@ -12,7 +12,7 @@ export function AuthNavigator() {
     tabBarInactiveTintColor: CustomColors.dark80,
     tabBarActiveTintColor: 'black',
     tabBarLabelStyle: {
-      fontSize: 16,
+      fontSize: 14,
       marginBottom: 15,
       fontWeight: '600',
     },
@@ -20,7 +20,7 @@ export function AuthNavigator() {
   let image = (img: string, actImg: string, focused: boolean) => {
     return (
       <Image
-        style={{height: 30, width: 30}}
+        style={{height: 25, width: 25}}
         source={!focused ? iconsSource[img] : iconsSource[actImg]}
       />
     );
@@ -30,17 +30,28 @@ export function AuthNavigator() {
       <Tab.Navigator
         screenOptions={{
           tabBarStyle: {
-            backgroundColor: CustomColors.light80,
+            backgroundColor: CustomColors.bgGrey,
             height: 80,
           },
         }}>
         <Tab.Screen
           name="home"
-          component={WelcomeScreen}
+          component={HomeScreen}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {
               return image('homeActive', 'home', !props.focused);
+            },
+          }}
+        />
+
+        <Tab.Screen
+          name="delivery"
+          component={DeliveryScreen}
+          options={{
+            ...sharedOptions,
+            tabBarIcon: props => {
+              return image('delivery', 'deliveryActive', props.focused);
             },
           }}
         />
@@ -51,16 +62,6 @@ export function AuthNavigator() {
             ...sharedOptions,
             tabBarIcon: props => {
               return image('discoverActive', 'discover', props.focused);
-            },
-          }}
-        />
-        <Tab.Screen
-          name="delivery"
-          component={WelcomeScreen}
-          options={{
-            ...sharedOptions,
-            tabBarIcon: props => {
-              return image('delivery', 'deliveryActive', props.focused);
             },
           }}
         />
