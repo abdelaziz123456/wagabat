@@ -10,4 +10,10 @@ export default StyleSheet.create({
     color: 'black',
     marginBottom: 12,
   },
+  cardsContainer: {
+    flexDirection: 'row', // Arrange the cards horizontally
+    justifyContent: 'space-between', // Distribute the space evenly between cards
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  },
 });
