@@ -5,7 +5,7 @@ type Props = {
   pressHandler: Function;
   CustomStyles?: object;
   children?: React.ReactNode;
-  btnTheme: 'red' | 'blue' | 'white' | 'black' | 'disabledBlue';
+  btnTheme: 'red' | 'blue' | 'white' | 'black' | 'disabledBlue' | 'outlined';
   disabled?: boolean;
 };
 const CustomButton = ({

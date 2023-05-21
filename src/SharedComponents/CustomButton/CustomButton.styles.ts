@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   container: {
     minHeight: 43,
     minWidth: 151,
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 20,
@@ -23,6 +24,11 @@ const styles = StyleSheet.create({
   },
   disabledBlue: {
     backgroundColor: CustomColors.blue60,
+  },
+  outlined: {
+    backgroundColor: 'white',
+    borderColor: CustomColors.blue100,
+    borderWidth: 1,
   },
 });
 export default styles;
