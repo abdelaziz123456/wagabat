@@ -11,8 +11,8 @@ export default StyleSheet.create({
     marginBottom: 12,
   },
   cardsContainer: {
-    flexDirection: 'row', // Arrange the cards horizontally
-    justifyContent: 'space-between', // Distribute the space evenly between cards
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
     flexWrap: 'wrap',
   },

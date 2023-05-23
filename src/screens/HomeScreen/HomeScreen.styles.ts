@@ -3,7 +3,6 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     backgroundColor: CustomColors.bgGrey,
-    flex: 1,
     padding: 16,
   },
   subCard: {
