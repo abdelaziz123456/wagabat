@@ -1,5 +1,5 @@
 import {ScrollView} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './HomeScreen.styles';
 
 import {
@@ -7,12 +7,15 @@ import {
   PromoSection,
   ReserveSection,
   StoreSection,
+  UserCard,
 } from '@Components/index';
 
 export default function HomeScreen() {
+  const [expand, setExpand] = useState(true);
   return (
     <ScrollView contentContainerStyle={styles.mainContainer}>
-      <HomeHeader />
+      <HomeHeader expand={expand} setExpand={setExpand} />
+      {expand && <UserCard />}
       <StoreSection />
       <ReserveSection />
       <PromoSection />

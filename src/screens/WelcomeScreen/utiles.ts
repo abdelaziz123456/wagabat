@@ -1,4 +1,4 @@
-export const screensData = {
+export const screensData: any = {
   '1': {
     img: require('../../../assets/images/food1.jpg'),
     title: 'Wide range of Food \n Categories & more',
