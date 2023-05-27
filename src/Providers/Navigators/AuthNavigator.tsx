@@ -1,17 +1,11 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {
-  DeliveryScreen,
-  HomeScreen,
-  Reservations,
-  ReserveTable,
-  WelcomeScreen,
-} from '@Screens/index';
+import {Profile, WelcomeScreen} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {HomeNavigation} from './HomeStack';
 let sharedOptions = {
   headerShown: false,
   tabBarInactiveTintColor: CustomColors.dark80,
@@ -22,40 +16,6 @@ let sharedOptions = {
     fontWeight: '600',
   },
 };
-const Stack = createNativeStackNavigator();
-function HomeNavigation() {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-        animation: 'slide_from_right',
-      }}>
-      <Stack.Screen
-        name="homescreen"
-        component={HomeScreen}
-        options={{
-          ...sharedOptions,
-        }}
-      />
-      <Stack.Screen
-        name="reserve"
-        component={ReserveTable}
-        options={{
-          ...sharedOptions,
-          headerShown: true,
-        }}
-      />
-      <Stack.Screen
-        name="reservations"
-        component={Reservations}
-        options={{
-          ...sharedOptions,
-          headerShown: true,
-        }}
-      />
-    </Stack.Navigator>
-  );
-}
 
 const Tab = createBottomTabNavigator();
 export function AuthNavigator() {
@@ -88,16 +48,6 @@ export function AuthNavigator() {
         />
 
         <Tab.Screen
-          name="delivery"
-          component={DeliveryScreen}
-          options={{
-            ...sharedOptions,
-            tabBarIcon: props => {
-              return image('delivery', 'deliveryActive', props.focused);
-            },
-          }}
-        />
-        <Tab.Screen
           name="discover"
           component={WelcomeScreen}
           options={{
@@ -119,7 +69,7 @@ export function AuthNavigator() {
         />
         <Tab.Screen
           name="profile"
-          component={WelcomeScreen}
+          component={Profile}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {
