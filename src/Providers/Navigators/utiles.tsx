@@ -1,6 +1,9 @@
 let mainSrc = '../../../assets/icons/';
 
-export const iconsSource = {
+interface IconsSource {
+  [key: string]: any;
+}
+export const iconsSource: IconsSource = {
   home: require(`${mainSrc}home.png`),
   homeActive: require(`${mainSrc}homeActive.png`),
   discover: require(`${mainSrc}discover.png`),

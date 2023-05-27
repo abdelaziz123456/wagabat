@@ -10,7 +10,7 @@ export default function StoreSection() {
     <CardBase customStyle={styles.cardBaseStyle}>
       <View
         style={styles.subCard}
-        onTouchEnd={() => navigation.navigate('home', {screen: 'store'})}>
+        onTouchEnd={() => navigation.navigate('home', {screen: 'storepickup'})}>
         <Image source={require(imgSrc + 'store.png')} />
         <Text style={styles.title}>Store pickup</Text>
         <Text style={styles.subtitle}>Best quality</Text>

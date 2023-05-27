@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Profile, WelcomeScreen} from '@Screens/index';
+import {Profile, Stores, WelcomeScreen} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
@@ -9,7 +9,7 @@ import {HomeNavigation} from './HomeStack';
 let sharedOptions = {
   headerShown: false,
   tabBarInactiveTintColor: CustomColors.dark80,
-  tabBarActiveTintColor: 'black',
+  tabBarActiveTintColor: CustomColors.blue100,
   tabBarLabelStyle: {
     fontSize: 14,
     marginBottom: 15,
@@ -22,7 +22,7 @@ export function AuthNavigator() {
   let image = (img: string, actImg: string, focused: boolean) => {
     return (
       <Image
-        style={{height: 25, width: 25}}
+        style={{height: 20, width: 20}}
         source={!focused ? iconsSource[img] : iconsSource[actImg]}
       />
     );
@@ -48,13 +48,14 @@ export function AuthNavigator() {
         />
 
         <Tab.Screen
-          name="discover"
-          component={WelcomeScreen}
+          name="stores"
+          component={Stores}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {
-              return image('discoverActive', 'discover', props.focused);
+              return image('discover', 'discoverActive', props.focused);
             },
+            headerShown: true,
           }}
         />
         <Tab.Screen

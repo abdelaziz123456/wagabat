@@ -3,7 +3,7 @@ import {
   HomeScreen,
   Reservations,
   ReserveTable,
-  StoreScreen,
+  StorePickupScreen,
 } from '@Screens/index';
 import React from 'react';
 import {CustomColors} from '@Utiles/constants';
@@ -50,8 +50,8 @@ export function HomeNavigation() {
         }}
       />
       <Stack.Screen
-        name="store"
-        component={StoreScreen}
+        name="storepickup"
+        component={StorePickupScreen}
         options={{
           ...sharedOptions,
           headerShown: true,
