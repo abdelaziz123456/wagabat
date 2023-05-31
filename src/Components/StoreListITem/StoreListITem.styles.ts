@@ -1,9 +1,7 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
-  searchContainer: {},
-  content: {
-    display: 'flex',
+  container: {
+    margin: 16,
     flexDirection: 'row',
-    justifyContent: 'flex-start',
   },
 });

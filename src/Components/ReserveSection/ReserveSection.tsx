@@ -4,6 +4,7 @@ import styles from './ReserveSection.styles';
 import CardBase from '@SharedComponents/CardBase/CardBase';
 import {CustomButton} from '@SharedComponents/index';
 import {useNavigation} from '@react-navigation/native';
+import {images} from './utiles';
 
 export default function ReserveSection() {
   const navigation = useNavigation();
@@ -15,7 +16,7 @@ export default function ReserveSection() {
             <Text style={styles.title}>Online Reservation</Text>
             <Text style={styles.subtitle}>Table taking</Text>
           </View>
-          <Image source={require('../../../assets/images/table.png')} />
+          <Image source={images.table} />
         </View>
         <View style={styles.lowerSection}>
           <CustomButton
@@ -23,10 +24,7 @@ export default function ReserveSection() {
               navigation.navigate('home', {screen: 'reserve'})
             }
             btnTheme={'outlined'}>
-            <Image
-              style={{marginRight: 10}}
-              source={require('../../../assets/images/timeTable.png')}
-            />
+            <Image style={{marginRight: 10}} source={images.timeTable} />
             <Text style={styles.btnText}>Reserve a table</Text>
           </CustomButton>
           <CustomButton

@@ -56,6 +56,12 @@ export function AuthNavigator() {
               return image('discover', 'discoverActive', props.focused);
             },
             headerShown: true,
+            headerTitleStyle: {
+              paddingVertical: 14.5,
+              fontWeight: '700',
+              fontSize: 18,
+              lineHeight: 27,
+            },
           }}
         />
         <Tab.Screen

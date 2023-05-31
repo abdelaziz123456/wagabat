@@ -1,13 +1,23 @@
-import {View, Text} from 'react-native';
-import React from 'react';
-import CardBase from '@SharedComponents/CardBase/CardBase';
+import {FlatList, View} from 'react-native';
+import React, {useState} from 'react';
 
-export default function Discover() {
+import {SearchStore, StoreListITem} from '@Components/index';
+import {restaurantsAndCafes} from '@Utiles/fakeData';
+
+export default function Stores() {
+  const [filteredData, setFilteredData] = useState(restaurantsAndCafes);
   return (
     <View>
-      <CardBase customStyle={{paddingTop: 0}}>
-        <Text>hello</Text>
-      </CardBase>
+      <SearchStore
+        setFilteredData={setFilteredData}
+        filteredData={filteredData}
+      />
+      <View style={{paddingBottom: 120}}>
+        <FlatList
+          data={filteredData}
+          renderItem={({item}) => <StoreListITem item={item} />}
+        />
+      </View>
     </View>
   );
 }

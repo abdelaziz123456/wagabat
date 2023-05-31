@@ -18,3 +18,7 @@ export const screensData: any = {
       'Please create an account or sign in to your existing account to start browsing our selection of delicious meals from your favoriterestaurants.',
   },
 };
+
+export const images = {
+  larrowRight: require('../../../assets/icons/arrowRightBlack.png'),
+};
