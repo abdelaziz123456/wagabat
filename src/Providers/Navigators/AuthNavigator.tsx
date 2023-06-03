@@ -1,11 +1,12 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Profile, Stores, WelcomeScreen} from '@Screens/index';
+import {Profile, WelcomeScreen} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
 import {HomeNavigation} from './HomeStack';
+import {StoresNavigator} from './StoresStack';
 let sharedOptions = {
   headerShown: false,
   tabBarInactiveTintColor: CustomColors.dark80,
@@ -49,18 +50,11 @@ export function AuthNavigator() {
 
         <Tab.Screen
           name="stores"
-          component={Stores}
+          component={StoresNavigator}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {
               return image('discover', 'discoverActive', props.focused);
-            },
-            headerShown: true,
-            headerTitleStyle: {
-              paddingVertical: 14.5,
-              fontWeight: '700',
-              fontSize: 18,
-              lineHeight: 27,
             },
           }}
         />

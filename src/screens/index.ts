@@ -7,3 +7,4 @@ export {default as Reservations} from './ReserveTable/ReserveTable';
 export {default as StorePickupScreen} from './StorePickupScreen/StorePickupScreen';
 export {default as Profile} from './Profile/Profile';
 export {default as Stores} from './Stores/Stores';
+export {default as StoreDetails} from './StoreDetails/StoreDetails';

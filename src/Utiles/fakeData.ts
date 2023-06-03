@@ -6,6 +6,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1234567890',
     address: '123 Main St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest1.jpg'),
+    openAt: '19:00',
+    closeAt: '18:00',
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9876543210',
     address: '456 Elm St, Townsville, Country',
     imageLink: require('../../assets/images/restaurants/rest2.jpg'),
+    openAt: '11:00',
+    closeAt: '16:00',
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1122334455',
     address: '789 Oak St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest3.jpg'),
+    openAt: '06:00',
+    closeAt: '02:00',
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9988776655',
     address: '246 Maple St, Hamletown, Country',
     imageLink: require('../../assets/images/restaurants/rest4.jpg'),
+    openAt: '05:00',
+    closeAt: '01:00',
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+5544332211',
     address: '135 Pine St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest5.jpg'),
+    openAt: '06:00',
+    closeAt: '22:00',
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+4433221100',
     address: '567 Walnut St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest6.jpg'),
+    openAt: '22:00',
+    closeAt: '19:00',
   },
   {
     id: 7,
@@ -54,6 +66,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1122003344',
     address: '890 Cedar St, Townsville, Country',
     imageLink: require('../../assets/images/restaurants/rest7.jpg'),
+    openAt: '03:00',
+    closeAt: '11:00',
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9988776655',
     address: '579 Oak St, Hamletown, Country',
     imageLink: require('../../assets/images/restaurants/rest8.jpg'),
+    openAt: '04:00',
+    closeAt: '16:00',
   },
   {
     id: 9,
@@ -70,6 +86,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+5544332211',
     address: '124 Pine St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest9.jpg'),
+    openAt: '05:00',
+    closeAt: '05:00',
   },
   {
     id: 10,
@@ -78,6 +96,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+4433221100',
     address: '356 Maple St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest10.jpg'),
+    openAt: '20:00',
+    closeAt: '15:00',
   },
   {
     id: 11,
@@ -86,6 +106,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1234567890',
     address: '123 Main St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest1.jpg'),
+    openAt: '19:00',
+    closeAt: '18:00',
   },
   {
     id: 12,
@@ -94,6 +116,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9876543210',
     address: '456 Elm St, Townsville, Country',
     imageLink: require('../../assets/images/restaurants/rest2.jpg'),
+    openAt: '11:00',
+    closeAt: '16:00',
   },
   {
     id: 13,
@@ -102,6 +126,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1122334455',
     address: '789 Oak St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest3.jpg'),
+    openAt: '06:00',
+    closeAt: '02:00',
   },
   {
     id: 14,
@@ -110,6 +136,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9988776655',
     address: '246 Maple St, Hamletown, Country',
     imageLink: require('../../assets/images/restaurants/rest4.jpg'),
+    openAt: '05:00',
+    closeAt: '01:00',
   },
   {
     id: 15,
@@ -118,6 +146,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+5544332211',
     address: '135 Pine St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest5.jpg'),
+    openAt: '06:00',
+    closeAt: '22:00',
   },
   {
     id: 16,
@@ -126,6 +156,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+4433221100',
     address: '567 Walnut St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest6.jpg'),
+    openAt: '22:00',
+    closeAt: '19:00',
   },
   {
     id: 17,
@@ -134,6 +166,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+1122003344',
     address: '890 Cedar St, Townsville, Country',
     imageLink: require('../../assets/images/restaurants/rest7.jpg'),
+    openAt: '03:00',
+    closeAt: '11:00',
   },
   {
     id: 18,
@@ -142,6 +176,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+9988776655',
     address: '579 Oak St, Hamletown, Country',
     imageLink: require('../../assets/images/restaurants/rest8.jpg'),
+    openAt: '04:00',
+    closeAt: '16:00',
   },
   {
     id: 19,
@@ -150,6 +186,8 @@ export const restaurantsAndCafes = [
     phoneNumber: '+5544332211',
     address: '124 Pine St, Cityville, Country',
     imageLink: require('../../assets/images/restaurants/rest9.jpg'),
+    openAt: '05:00',
+    closeAt: '05:00',
   },
   {
     id: 20,
@@ -158,5 +196,7 @@ export const restaurantsAndCafes = [
     phoneNumber: '+4433221100',
     address: '356 Maple St, Villageland, Country',
     imageLink: require('../../assets/images/restaurants/rest10.jpg'),
+    openAt: '20:00',
+    closeAt: '15:00',
   },
 ];

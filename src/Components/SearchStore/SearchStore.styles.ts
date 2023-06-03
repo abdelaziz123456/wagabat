@@ -1,5 +1,12 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
+  searchTitle: {
+    paddingVertical: 14.5,
+    fontWeight: '700',
+    fontSize: 18,
+    lineHeight: 27,
+    color: 'black',
+  },
   searchContainer: {
     paddingTop: 0,
   },
@@ -10,7 +17,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#DDDDE3',
-    paddingVertical: 8,
     borderRadius: 4,
   },
   searchIcon: {
@@ -21,5 +27,11 @@ export default StyleSheet.create({
   },
   searchInput: {
     padding: 0,
+    margin: 0,
+    paddingVertical: 0,
+    flex: 1,
+    height: 40,
+    justifyContent: 'center',
+    //minWidth: 200,
   },
 });
