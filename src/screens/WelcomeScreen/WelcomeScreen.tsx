@@ -18,13 +18,7 @@ export default function WelcomeScreen() {
   };
 
   return (
-    <View
-      style={{
-        backgroundColor: 'white',
-        flex: 1,
-        alignItems: 'center',
-        paddingHorizontal: 21,
-      }}>
+    <View style={styles.mainContainer}>
       <Animatable.View ref={animatableRef} style={{alignItems: 'center'}}>
         <Image source={screensData[currScreen].img} style={styles.image} />
         <Text style={{marginBottom: 50, marginTop: 10}}>{currScreen} of 3</Text>

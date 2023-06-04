@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Profile, WelcomeScreen} from '@Screens/index';
+import {Orders, Profile, WelcomeScreen} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
@@ -60,7 +60,7 @@ export function AuthNavigator() {
         />
         <Tab.Screen
           name="orders"
-          component={WelcomeScreen}
+          component={Orders}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {

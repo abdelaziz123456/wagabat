@@ -3,7 +3,7 @@ import NavWrapper from './src/Providers/NavWrapper';
 import {combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-import LikedRests from './src/store/reducers/likedRestaurants';
+import LikedRests from './src/Store/reducers/likedRestaurants';
 const rootReducer = combineReducers({
   LikedRests,
 });

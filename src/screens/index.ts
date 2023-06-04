@@ -8,3 +8,4 @@ export {default as StorePickupScreen} from './StorePickupScreen/StorePickupScree
 export {default as Profile} from './Profile/Profile';
 export {default as Stores} from './Stores/Stores';
 export {default as StoreDetails} from './StoreDetails/StoreDetails';
+export {default as Orders} from './Orders/Orders';
