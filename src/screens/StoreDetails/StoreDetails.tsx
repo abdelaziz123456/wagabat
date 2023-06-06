@@ -7,7 +7,7 @@ import styles from './StoreDetails.styles';
 import {ReserveSection, StoreSection} from '@Components/index';
 import {checkLiked, clickHandler, images} from './utiles';
 import {useSelector, useDispatch} from 'react-redux';
-import {like_rest, unlike_rest} from '../../Store/actions';
+import {like_rest, unlike_rest} from '../../store/actions';
 type Props = {
   route: any;
 };
