@@ -1,19 +1,22 @@
-import {FlatList, Image, Text, View} from 'react-native';
+import {FlatList, Image, Text, View, ActivityIndicator} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {SearchStore, StoreListITem} from '@Components/index';
-import {restaurantsAndCafes} from '@Utiles/fakeData';
+
 import {useNavigation} from '@react-navigation/native';
 import styles from './Stores.styles';
 import {useSelector} from 'react-redux';
+import useGetShops from '@hooks/useGetShops';
+import {CustomColors} from '@Utiles/constants';
 export default function Stores() {
   const [showFav, setShowFav] = useState(false);
+  const [requestData, setRequestData] = useState([]);
   const likedList = useSelector((state: any) => state.LikedRests);
 
-  const [filteredData, setFilteredData] = useState(restaurantsAndCafes);
-
+  const [filteredData, setFilteredData] = useState([]);
+  console.log('this is data');
   useEffect(() => {
-    showFav ? setFilteredData(likedList) : setFilteredData(restaurantsAndCafes);
-  }, [showFav, likedList]);
+    showFav ? setFilteredData(likedList) : setFilteredData(requestData);
+  }, [showFav, likedList, requestData]);
 
   const navigator = useNavigation();
   const onPressHandler = (id: number) => {
@@ -21,6 +24,19 @@ export default function Stores() {
       itemId: id,
     });
   };
+  const onSuccessHandler = (data: any) => {
+    setRequestData(data.result);
+  };
+  const onErrorHandler = (error: any) => {
+    console.log({error});
+  };
+  const {
+    data: receivedData,
+    isLoading,
+    isSuccess,
+    isError,
+  } = useGetShops(onSuccessHandler, onErrorHandler);
+  console.log(isLoading, receivedData, isSuccess);
 
   return (
     <View>
@@ -30,8 +46,15 @@ export default function Stores() {
         setShowFav={setShowFav}
         showFav={showFav}
       />
-      {filteredData?.length ? (
-        <View style={{paddingBottom: 120}}>
+
+      {isLoading ? (
+        <ActivityIndicator
+          size="large"
+          color={CustomColors.blue100}
+          style={styles.indicator}
+        />
+      ) : filteredData?.length ? (
+        <View style={{paddingBottom: 230}}>
           <FlatList
             data={filteredData}
             renderItem={({item}) => (

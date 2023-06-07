@@ -12,4 +12,7 @@ export default StyleSheet.create({
   subTitle: {
     fontSize: 16,
   },
+  indicator: {
+    height: 300,
+  },
 });
