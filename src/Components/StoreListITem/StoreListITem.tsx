@@ -2,6 +2,7 @@ import {View, Text, Image, Pressable} from 'react-native';
 import React from 'react';
 import styles from './StoreListITem.styles';
 import {CardBase} from '@SharedComponents/index';
+import {Images} from '@assets';
 type Props = {
   onPressHandler: Function;
   item: {
@@ -16,19 +17,11 @@ export default function StoreListITem({item, onPressHandler}: Props) {
     <Pressable onPress={() => onPressHandler()} style={{margin: 10}}>
       <CardBase customStyle={styles.container}>
         <Image
-          source={require('../../../assets/icons/storeItem.png')}
+          source={Images.icons.storeItem}
           style={{marginTop: 3, marginRight: 10}}
         />
         <View style={{padding: 0, margin: 0}}>
-          <Text
-            style={{
-              fontWeight: '500',
-              color: 'black',
-              fontSize: 14,
-              marginBottom: 4,
-            }}>
-            {item.name}
-          </Text>
+          <Text style={styles.itemName}>{item.name}</Text>
           <Text>{item.address}</Text>
         </View>
       </CardBase>

@@ -1,24 +1,25 @@
+import {Images} from '@assets';
 export const CampData = [
   {
-    img: require('../../../assets/images/camp1.png'),
+    img: Images.camp1,
     discount: 20,
     time: '20/04/20 - 06/09/2020',
     title: 'Discount all Excelsa',
   },
   {
-    img: require('../../../assets/images/camp2.png'),
+    img: Images.camp2,
     discount: 20,
     time: '20/04/20 - 06/09/2020',
     title: 'Discount all Liberica',
   },
   {
-    img: require('../../../assets/images/camp3.png'),
+    img: Images.camp3,
     discount: 20,
     time: '20/04/20 - 06/09/2020',
     title: 'Discount all Arabica',
   },
   {
-    img: require('../../../assets/images/camp4.png'),
+    img: Images.camp4,
     discount: 20,
     time: '20/04/20 - 06/09/2020',
     title: 'Discount all Robusta',

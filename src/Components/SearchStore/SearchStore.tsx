@@ -4,6 +4,7 @@ import CardBase from '@SharedComponents/CardBase/CardBase';
 import styles from './SearchStore.styles';
 import {restaurantsAndCafes} from '@Utiles/fakeData';
 import {CustomColors} from '@Utiles/constants';
+import {Images} from '@assets';
 
 type Props = {
   setFilteredData: Function;
@@ -17,7 +18,6 @@ export default function SearchStore({
   showFav,
   setShowFav,
 }: Props) {
-  let searchIcon = require('../../../assets/icons/SearchIcon.png');
   const inputRef: any = useRef(null);
 
   const onChangeHandler = (part: string) => {
@@ -48,7 +48,7 @@ export default function SearchStore({
       </View>
 
       <View style={styles.content}>
-        <Image source={searchIcon} style={styles.searchIcon} />
+        <Image source={Images.icons.searchIcon} style={styles.searchIcon} />
         <TextInput
           ref={inputRef}
           placeholder="Search store"

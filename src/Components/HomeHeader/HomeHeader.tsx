@@ -2,21 +2,17 @@ import {View, Image, Text} from 'react-native';
 import React from 'react';
 import styles from './HomeHeader.styles';
 import {CustomColors} from '@Utiles/constants';
+import {Images} from '@assets';
 type Props = {
   expand: boolean;
   setExpand: Function;
 };
 export default function HomeHeader({expand, setExpand}: Props) {
-  let icon = !expand
-    ? require('../../../assets/icons/expand.png')
-    : require('../../../assets/icons/compress.png');
+  let icon = !expand ? Images.icons.expand : Images.icons.compress;
   return (
     <View style={styles.mainContainer}>
       <View style={{flexDirection: 'row'}}>
-        <Image
-          source={require('../../../assets/icons/userIcon.png')}
-          style={{marginRight: 14}}
-        />
+        <Image source={Images.icons.userIcon} style={{marginRight: 14}} />
         <View>
           <Text style={{fontSize: 14, fontWeight: '400'}}>welcome to </Text>
           <Text style={{fontSize: 14, fontWeight: '700'}}>Wagabat App </Text>

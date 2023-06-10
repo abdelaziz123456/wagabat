@@ -5,9 +5,10 @@ import {useNavigation} from '@react-navigation/native';
 import {CardBase} from '@SharedComponents/index';
 import styles from './StoreDetails.styles';
 import {ReserveSection, StoreSection} from '@Components/index';
-import {checkLiked, clickHandler, images} from './utiles';
+import {checkLiked, clickHandler} from './utiles';
 import {useSelector, useDispatch} from 'react-redux';
 import {like_rest, unlike_rest} from '../../store/actions';
+import {Images} from '@assets';
 type Props = {
   route: any;
 };
@@ -25,7 +26,7 @@ export default function StoreDetails({route}: Props) {
   return (
     <View style={{paddingHorizontal: 16}}>
       <Pressable onPress={() => navigator.goBack()}>
-        <Image source={images.backIcon} style={{marginVertical: 16}} />
+        <Image source={Images.icons.backButton} style={{marginVertical: 16}} />
       </Pressable>
       <ScrollView contentContainerStyle={{paddingBottom: 80}}>
         <CardBase customStyle={{padding: 0, marginBottom: 16}}>
@@ -50,7 +51,9 @@ export default function StoreDetails({route}: Props) {
                   )
                 }>
                 <Image
-                  source={liked ? images.likeImg : images.unLikedImg}
+                  source={
+                    liked ? Images.icons.likeImg : Images.icons.unLikedImg
+                  }
                   style={{width: 30, height: 30}}
                 />
               </Pressable>
@@ -61,7 +64,7 @@ export default function StoreDetails({route}: Props) {
         <ReserveSection />
         <CardBase customStyle={{paddingHorizontal: 16}}>
           <View style={{marginBottom: 16, flexDirection: 'row'}}>
-            <Image source={images.phoneIcon} style={{marginRight: 12}} />
+            <Image source={Images.icons.phoneIcon} style={{marginRight: 12}} />
             <View>
               <Text style={{...styles.restOpen, marginBottom: 5}}>
                 Phone number
@@ -70,7 +73,10 @@ export default function StoreDetails({route}: Props) {
             </View>
           </View>
           <View style={{flexDirection: 'row'}}>
-            <Image source={images.addressIcon} style={{marginRight: 12}} />
+            <Image
+              source={Images.icons.addressIcon}
+              style={{marginRight: 12}}
+            />
             <View>
               <Text style={{...styles.restOpen, marginBottom: 5}}>Address</Text>
               <Text style={styles.restName}>{restaurant.address}</Text>

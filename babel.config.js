@@ -11,7 +11,7 @@ module.exports = {
           '@Components': './src/Components',
           '@Screens': './src/Screens',
           '@Utiles': './src/Utiles',
-          '@assets': './assets',
+          '@assets': './src/assets',
         },
       },
     ],

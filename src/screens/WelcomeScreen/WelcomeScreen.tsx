@@ -3,8 +3,9 @@ import React, {useState, useRef} from 'react';
 import * as Animatable from 'react-native-animatable';
 import {useNavigation} from '@react-navigation/native';
 import {CustomButton} from '@SharedComponents/index';
-import {screensData, images} from './utiles';
+import {screensData} from './utiles';
 import styles from './WelcomeScreen.styles';
+import {Images} from '@assets';
 export default function WelcomeScreen() {
   const [currScreen, setCurrentScreen] = useState(1);
   const animatableRef = useRef(null);
@@ -36,7 +37,7 @@ export default function WelcomeScreen() {
           CustomStyles={{height: 64, width: 183}}>
           <View style={{flexDirection: 'row'}}>
             <Text style={{fontSize: 18}}>Skip</Text>
-            <Image source={images.larrowRight} alt="" />
+            <Image source={Images.icons.arrowRightBlack} alt="" />
           </View>
         </CustomButton>
         <CustomButton
@@ -56,7 +57,7 @@ export default function WelcomeScreen() {
             <Text style={{color: 'white', fontSize: 18}}>
               {currScreen == 3 ? 'Continue' : 'Next'}
             </Text>
-            <Image source={images.larrowRight} alt="" />
+            <Image source={Images.icons.arrowRightBlack} alt="" />
           </View>
         </CustomButton>
       </View>
