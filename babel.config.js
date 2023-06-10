@@ -2,6 +2,7 @@ module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
     //if you already have other plugin just paste this lines below
+
     [
       'module-resolver',
       {
@@ -10,9 +11,10 @@ module.exports = {
           '@Components': './src/Components',
           '@Screens': './src/Screens',
           '@Utiles': './src/Utiles',
-          '@assets': './assets',
+          '@assets': './src/assets',
         },
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };

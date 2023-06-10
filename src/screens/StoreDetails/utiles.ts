@@ -1,11 +1,3 @@
-export const images = {
-  backIcon: require('../../../assets/icons/backBtn.png'),
-  unLikedImg: require('../../../assets/icons/loveFaded.png'),
-  likeImg: require('../../../assets/icons/love.png'),
-  phoneIcon: require('../../../assets/icons/phone.png'),
-  addressIcon: require('../../../assets/icons/address.png'),
-};
-
 export const clickHandler = (
   liked: boolean,
   dispatch: Function,

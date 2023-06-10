@@ -1,11 +1,12 @@
 import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
 import styles from './UserCard.styles';
+import {Images} from '@assets';
 export default function UserCard() {
   return (
     <View style={{paddingVertical: 16}}>
       <ImageBackground
-        source={require('../../../assets/images/userCard.png')}
+        source={Images.userCard}
         style={styles.imageBG}
         imageStyle={{borderRadius: 6}}>
         <View style={styles.innerContainer}>

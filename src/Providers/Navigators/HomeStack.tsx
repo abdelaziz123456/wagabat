@@ -54,7 +54,6 @@ export function HomeNavigation() {
         component={StorePickupScreen}
         options={{
           ...sharedOptions,
-          headerShown: true,
         }}
       />
       <Stack.Screen

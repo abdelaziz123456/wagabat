@@ -1,4 +1,4 @@
-let mainSrc = '../../../assets/icons/';
+let mainSrc = '../../assets/icons/';
 
 interface IconsSource {
   [key: string]: any;
