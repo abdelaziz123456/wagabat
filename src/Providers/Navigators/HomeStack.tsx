@@ -61,7 +61,6 @@ export function HomeNavigation() {
         component={DeliveryScreen}
         options={{
           ...sharedOptions,
-          headerShown: true,
         }}
       />
     </Stack.Navigator>

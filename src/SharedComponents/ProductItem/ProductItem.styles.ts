@@ -1,16 +1,24 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
+    height: 68,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 14.5,
-    paddingHorizontal: 16,
+    marginVertical: 8,
+    marginLeft: 16,
   },
-  icon: {
-    marginRight: 10,
+  details: {
+    marginLeft: 16,
+  },
+  productIcon: {
+    width: 68,
+    height: 68,
+    borderRadius: 40,
   },
   title: {
-    fontSize: 18,
+    color: 'black',
+  },
+  price: {
     fontWeight: '700',
     color: 'black',
   },

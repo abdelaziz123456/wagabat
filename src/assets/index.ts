@@ -37,5 +37,9 @@ export const Images = {
     pizza: require('./images/products/pizza.png'),
     PureBlack: require('./images/products/PureBlack.png'),
     rebusta: require('./images/products/rebusta.png'),
+    namkeen: require('./images/products/namkeen.png'),
+    samosa: require('./images/products/samosa.png'),
+    danish: require('./images/products/Danish.jpg'),
+    truffle: require('./images/products/TrufflePastries.jpg'),
   },
 };
