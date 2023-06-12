@@ -89,4 +89,19 @@ export const products = [
     image: Images.products.danish,
     categoryId: 5,
   },
+  {
+    id: 12,
+    name: 'Tea',
+    price: 110,
+    image: Images.products.tea,
+    categoryId: 4,
+  },
+
+  {
+    id: 13,
+    name: 'Green Tea',
+    price: 130,
+    image: Images.products.greenTea,
+    categoryId: 4,
+  },
 ];

@@ -6,3 +6,4 @@ export {default as UserCard} from './UserCard/UserCard';
 export {default as SearchStore} from './SearchStore/SearchStore';
 export {default as StoreListITem} from './StoreListITem/StoreListITem';
 export {default as ScreenHeader} from './ScreenHeader/ScreenHeader';
+export {default as ProductCard} from './ProdcutCard/ProdcutCard';

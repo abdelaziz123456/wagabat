@@ -1,6 +1,7 @@
 import {
   DeliveryScreen,
   HomeScreen,
+  ProductDetails,
   Reservations,
   ReserveTable,
   StorePickupScreen,
@@ -59,6 +60,13 @@ export function HomeNavigation() {
       <Stack.Screen
         name="delivery"
         component={DeliveryScreen}
+        options={{
+          ...sharedOptions,
+        }}
+      />
+      <Stack.Screen
+        name="productDetails"
+        component={ProductDetails}
         options={{
           ...sharedOptions,
         }}

@@ -1,3 +1,6 @@
+import {Images} from '@assets';
+import {ProductItemType} from './types';
+
 export const restaurantsAndCafes = [
   {
     id: 1,
@@ -199,4 +202,138 @@ export const restaurantsAndCafes = [
     openAt: '20:00',
     closeAt: '15:00',
   },
+];
+
+export const products: ProductItemType[] = [
+  {
+    id: 1,
+    name: 'Pizza',
+    price: 100,
+    image: Images.products.pizza,
+    categoryId: 6,
+    description: 'Delicious pizza topped with various ingredients.',
+    cover:
+      'https://img.freepik.com/premium-photo/close-up-view-baked-homemade-piza-rustic-pizza-home-made-food-tasty-pizza-with-vegetables-basil_87555-10790.jpg?w=2000',
+  },
+  {
+    id: 2,
+    name: 'Pure black',
+    price: 120,
+    image: Images.products.PureBlack,
+    categoryId: 2,
+    description: 'Strong and bold black coffee.',
+    cover:
+      'https://img.freepik.com/premium-photo/close-up-view-baked-homemade-piza-rustic-pizza-home-made-food-tasty-pizza-with-vegetables-basil_87555-10790.jpg?w=2000',
+  },
+  {
+    id: 3,
+    name: 'Latte',
+    price: 450,
+    image: Images.products.latte,
+    categoryId: 2,
+    description: 'Creamy and frothy espresso-based drink.',
+    cover:
+      'https://www.allrecipes.com/thmb/Wh0Qnynwdxok4oN0NZ1Lz-wl0A8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9428203-9d140a4ed1424824a7ddd358e6161473.jpg',
+  },
+  {
+    id: 4,
+    name: 'Arabica',
+    price: 320,
+    image: Images.products.arabica,
+    categoryId: 2,
+    description: 'Rich and aromatic Arabica coffee.',
+    cover:
+      'https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=0.668xw:1.00xh;0.0680xw,0&resize=1200:*',
+  },
+  {
+    id: 5,
+    name: 'Burger',
+    price: 370,
+    image: Images.products.burger,
+    categoryId: 8,
+    description: 'Juicy and flavorful burger with various toppings.',
+    cover:
+      'https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Cheeseburger-3d7c922.jpg',
+  },
+  {
+    id: 6,
+    name: 'Capuccino',
+    price: 210,
+    image: Images.products.capuccino,
+    categoryId: 2,
+    description: 'Classic Italian coffee with steamed milk foam.',
+    cover:
+      'https://a-static.mlcdn.com.br/450x450/taca-de-capuccino-cafe-chocolate-xicara-1-peca-fratelli/casabr/99755898dc0411ebb1e14201ac18500e/cdad2b09038dd14749051c9db54872fb.jpeg',
+  },
+  {
+    id: 7,
+    name: 'Rebusta',
+    price: 190,
+    image: Images.products.rebusta,
+    categoryId: 3,
+    description: 'Blend of Robusta coffee beans with strong flavor.',
+    cover:
+      'https://pristineorganics.com/wp-content/uploads/2020/01/Front-4.jpg',
+  },
+  {
+    id: 8,
+    name: 'Samosa',
+    price: 120,
+    image: Images.products.samosa,
+    categoryId: 7,
+    description:
+      'Crispy and savory Indian snack filled with potatoes and spices.',
+    cover:
+      'https://www.sainsburysmagazine.co.uk/uploads/media/720x770/06/12266-samosas.jpg?v=1-0',
+  },
+  {
+    id: 9,
+    name: 'Namkeen',
+    price: 190,
+    image: Images.products.namkeen,
+    categoryId: 7,
+    description: 'Assorted Indian savory snacks with different flavors.',
+    cover: 'https://5.imimg.com/data5/LL/XG/MY-23223301/namkeens-500x500.jpg',
+  },
+  {
+    id: 10,
+    name: 'Danish',
+    price: 250,
+    image: Images.products.truffle,
+    categoryId: 5,
+    description: 'Delicious pastry with flaky layers and sweet filling.',
+    cover:
+      'https://3brothersbakery.com/wp-content/uploads/2018/05/CheeseDanish_01-scaled.jpg',
+  },
+  {
+    id: 11,
+    name: 'Truffle',
+    price: 430,
+    image: Images.products.danish,
+    categoryId: 5,
+    description: 'Decadent chocolate truffle dessert.',
+    cover:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Glazed_apple_Danish.jpg/1200px-Glazed_apple_Danish.jpg',
+  },
+  {
+    id: 12,
+    name: 'Tea',
+    price: 110,
+    image: Images.products.tea,
+    categoryId: 4,
+    description: 'Refreshing and aromatic tea beverage.',
+    cover:
+      'https://cdn.shopify.com/s/files/1/0560/1699/4381/articles/BC_2B-_2BAssam_2B_28cup_29_2B_281055_29.jpg?v=1664455870',
+  },
+  {
+    id: 13,
+    name: 'Green Tea',
+    price: 130,
+    image: Images.products.greenTea,
+    categoryId: 4,
+    description: 'Healthy and antioxidant-rich green tea.',
+    cover:
+      'https://hips.hearstapps.com/hmg-prod/images/green-tea-wight-loss-1643990040.jpg?crop=0.665xw:1.00xh;0.291xw,0&resize=1200:*',
+  },
+  // Add more products with descriptions
 ];

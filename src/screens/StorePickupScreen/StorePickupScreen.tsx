@@ -6,10 +6,12 @@ import {ScreenHeader} from '@Components/index';
 import {Images} from '@assets';
 import {products, tabItems} from './utiles';
 import {ProductItem, TabItem} from '@SharedComponents/index';
+import {useSelector} from 'react-redux';
 export default function StorePickupScreen() {
   const [activeTab, setActiveTab] = useState(1);
   let selectedItems = products.filter(prod => prod.categoryId == activeTab);
-
+  const likedProducts = useSelector((state: any) => state.LikedProducts);
+  console.log(likedProducts);
   return (
     <View style={styles.mainContainer}>
       <ScreenHeader

@@ -5948,6 +5948,11 @@ react-native-gradle-plugin@^0.71.17:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz"
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
+react-native-radio-buttons-group@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-radio-buttons-group/-/react-native-radio-buttons-group-3.0.2.tgz#9016a739819030cbf58a563b2487fac46a711f02"
+  integrity sha512-5Nszk4WJGO4MeL+/4TSQRGoQErZlAaj5zAb4tis5f2J+O1tGzCMRtIARqr0WlIKwsjzH6zmcgyr9Q2Vv5xMiPw==
+
 react-native-reanimated-carousel@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/react-native-reanimated-carousel/-/react-native-reanimated-carousel-3.3.0.tgz"

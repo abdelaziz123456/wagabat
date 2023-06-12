@@ -41,5 +41,7 @@ export const Images = {
     samosa: require('./images/products/samosa.png'),
     danish: require('./images/products/Danish.jpg'),
     truffle: require('./images/products/TrufflePastries.jpg'),
+    tea: require('./images/products/tea.jpg'),
+    greenTea: require('./images/products/greanTea.jpg'),
   },
 };
