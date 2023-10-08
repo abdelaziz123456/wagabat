@@ -1,23 +1,18 @@
-import {View, Image, TextInput, Text, Switch} from 'react-native';
+import {View, Image, TextInput, Text, Switch, Platform} from 'react-native';
 import React, {useRef} from 'react';
 import CardBase from '@SharedComponents/CardBase/CardBase';
 import styles from './SearchStore.styles';
 import {restaurantsAndCafes} from '@Utiles/fakeData';
 import {CustomColors} from '@Utiles/constants';
 import {Images} from '@assets';
+import {SearchStoreProps} from '@Utiles/props';
 
-type Props = {
-  setFilteredData: Function;
-  filteredData: any;
-  showFav: boolean;
-  setShowFav: Function;
-};
 export default function SearchStore({
   setFilteredData,
   filteredData,
   showFav,
   setShowFav,
-}: Props) {
+}: SearchStoreProps) {
   const inputRef: any = useRef(null);
 
   const onChangeHandler = (part: string) => {
@@ -35,7 +30,13 @@ export default function SearchStore({
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <Text style={styles.searchTitle}>Search Store</Text>
         <View style={{flexDirection: 'row'}}>
-          <Text style={{marginTop: 16, fontWeight: '700'}}>Fav Only</Text>
+          <Text
+            style={{
+              marginTop: Platform.OS == 'ios' ? 8 : 16,
+              fontWeight: '700',
+            }}>
+            Fav Only
+          </Text>
           <Switch
             onValueChange={() => {
               setShowFav(!showFav);

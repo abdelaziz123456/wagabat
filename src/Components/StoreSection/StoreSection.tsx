@@ -4,8 +4,9 @@ import CardBase from '@SharedComponents/CardBase/CardBase';
 import styles from './StoreSection.styles';
 import {useNavigation} from '@react-navigation/native';
 import {Images} from '@assets';
+import {AuthStackNavigationProp} from '@Utiles/navigatorTypes';
 export default function StoreSection() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<AuthStackNavigationProp>();
   return (
     <CardBase customStyle={styles.cardBaseStyle}>
       <View

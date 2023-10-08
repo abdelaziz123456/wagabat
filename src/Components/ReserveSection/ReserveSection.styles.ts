@@ -22,6 +22,7 @@ export default StyleSheet.create({
     fontSize: 16,
     textAlign: 'left',
     marginTop: 8,
+    color: 'black',
   },
   subtitle: {
     fontWeight: '400',

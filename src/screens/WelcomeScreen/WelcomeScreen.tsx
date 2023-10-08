@@ -6,12 +6,13 @@ import {CustomButton} from '@SharedComponents/index';
 import {screensData} from './utiles';
 import styles from './WelcomeScreen.styles';
 import {Images} from '@assets';
+import {UnAuthNavigationProp} from '@Utiles/navigatorTypes';
 export default function WelcomeScreen() {
   const [currScreen, setCurrentScreen] = useState(1);
   const animatableRef = useRef(null);
   const textRef = useRef(null);
   const contentRef = useRef(null);
-  const navigation = useNavigation();
+  const navigation = useNavigation<UnAuthNavigationProp>();
   const bounceRight = () => {
     animatableRef.current?.fadeInRight(500);
     textRef.current?.fadeInRight(500);

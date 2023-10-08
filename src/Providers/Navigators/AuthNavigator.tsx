@@ -7,6 +7,7 @@ import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
 import {HomeNavigation} from './HomeStack';
 import {StoresNavigator} from './StoresStack';
+import {AuthStackParamList} from '@Utiles/navigatorTypes';
 let sharedOptions = {
   headerShown: false,
   tabBarInactiveTintColor: CustomColors.dark80,
@@ -18,7 +19,7 @@ let sharedOptions = {
   },
 };
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<AuthStackParamList>();
 export function AuthNavigator() {
   let image = (img: string, actImg: string, focused: boolean) => {
     return (

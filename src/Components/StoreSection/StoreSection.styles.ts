@@ -13,6 +13,7 @@ export default StyleSheet.create({
   },
   title: {
     fontWeight: '500',
+    color: 'black',
     fontSize: 16,
     textAlign: 'center',
     marginTop: 8,

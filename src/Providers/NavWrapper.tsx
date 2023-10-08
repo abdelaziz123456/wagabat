@@ -7,6 +7,6 @@ type Props = {
 };
 
 export default function NavWrapper() {
-  const [auth, setAuth] = useState(true);
+  const [auth, setAuth] = useState(false);
   return auth ? <AuthNavigator /> : <UnAuthNavigator />;
 }

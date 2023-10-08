@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from './AuthScreen.styles';
-import {KeyboardAvoidingView, ScrollView, Text} from 'react-native';
+import {KeyboardAvoidingView, Platform, ScrollView, Text} from 'react-native';
 import {CustomButton, CustomTab} from '@SharedComponents/index';
 import Login from './MiniComponents/Login';
 import SignUp from './MiniComponents/SignUp';
@@ -20,7 +20,9 @@ export default function AuthScreen() {
     validationHandler(enteredData, activeTab, setIsValid);
   }, [enteredData, activeTab]);
   return (
-    <KeyboardAvoidingView style={styles.avoidingView}>
+    <KeyboardAvoidingView
+      style={styles.avoidingView}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <ScrollView contentContainerStyle={styles.mainContainer}>
         <Text style={styles.title}>Welcome !</Text>
         <Text style={styles.subTitle}>Sign Up or Login to Your Account</Text>

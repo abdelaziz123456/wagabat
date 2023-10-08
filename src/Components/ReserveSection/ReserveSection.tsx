@@ -5,9 +5,10 @@ import CardBase from '@SharedComponents/CardBase/CardBase';
 import {CustomButton} from '@SharedComponents/index';
 import {useNavigation} from '@react-navigation/native';
 import {Images} from '@assets';
+import {AuthStackNavigationProp} from '@Utiles/navigatorTypes';
 
 export default function ReserveSection() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<AuthStackNavigationProp>();
   return (
     <View style={styles.mainContainer}>
       <CardBase>

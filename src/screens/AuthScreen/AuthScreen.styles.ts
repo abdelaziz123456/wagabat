@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 import {CustomColors} from '../../Utiles/constants';
 
 export default StyleSheet.create({
@@ -31,7 +31,7 @@ export default StyleSheet.create({
     width: '100%',
     height: 64,
     marginTop: 'auto',
-    bottom: 20,
+    bottom: Platform.OS === 'ios' ? 50 : 20,
   },
   btnText: {fontSize: 18, color: 'white', fontWeight: '500'},
 });

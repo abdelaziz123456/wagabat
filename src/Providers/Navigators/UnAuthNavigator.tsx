@@ -2,7 +2,8 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {AuthScreen, WelcomeScreen} from '@Screens/index';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-const Stack = createNativeStackNavigator();
+import {UnAuthStackParamList} from '@Utiles/navigatorTypes';
+const Stack = createNativeStackNavigator<UnAuthStackParamList>();
 export function UnAuthNavigator() {
   return (
     <NavigationContainer>
