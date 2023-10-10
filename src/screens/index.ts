@@ -10,3 +10,6 @@ export {default as Stores} from './Stores/Stores';
 export {default as StoreDetails} from './StoreDetails/StoreDetails';
 export {default as Orders} from './Orders/Orders';
 export {default as ProductDetails} from './ProductDetails/ProductDetails';
+export {default as OrdersHistory} from './OrdersHistory/OrdersHistory';
+export {default as OrderDetails} from './OrderDetails/OrderDetails';
+export {default as SplashScreen} from './SplashScreen/SplashScreen';

@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
-
 import {AuthNavigator} from './Navigators/AuthNavigator';
 import {UnAuthNavigator} from './Navigators/UnAuthNavigator';
-type Props = {
-  children?: React.ReactNode;
-};
+import {SplashScreen} from '@Screens/index';
 
 export default function NavWrapper() {
   const [auth, setAuth] = useState(true);
-  return auth ? <AuthNavigator /> : <UnAuthNavigator />;
+  const [showSplash, setShowSplash] = useState(true);
+
+  return showSplash ? (
+    <SplashScreen setShowSplash={setShowSplash} />
+  ) : auth ? (
+    <AuthNavigator />
+  ) : (
+    <UnAuthNavigator />
+  );
 }

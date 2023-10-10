@@ -14,8 +14,17 @@ export type UnAuthStackParamList = {
   welcome: undefined;
 };
 
+export type OrdersStackParamList = {
+  ordersScreen: undefined;
+  ordersHistory: undefined;
+  orderDetails: undefined;
+};
+
 export type AuthStackNavigationProp =
   NativeStackNavigationProp<AuthStackParamList>;
 
 export type UnAuthNavigationProp =
   NativeStackNavigationProp<UnAuthStackParamList>;
+
+export type OrdersStackNavigationProp =
+  NativeStackNavigationProp<OrdersStackParamList>;

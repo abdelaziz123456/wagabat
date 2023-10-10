@@ -1,13 +1,14 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Orders, Profile, WelcomeScreen} from '@Screens/index';
+import {Profile} from '@Screens/index';
 import {Image} from 'react-native';
 import {iconsSource} from './utiles';
 import {CustomColors} from '@Utiles/constants';
 import {HomeNavigation} from './HomeStack';
 import {StoresNavigator} from './StoresStack';
 import {AuthStackParamList} from '@Utiles/navigatorTypes';
+import OrdersStack from './OrdersStack';
 let sharedOptions = {
   headerShown: false,
   tabBarInactiveTintColor: CustomColors.dark80,
@@ -61,7 +62,7 @@ export function AuthNavigator() {
         />
         <Tab.Screen
           name="orders"
-          component={Orders}
+          component={OrdersStack}
           options={{
             ...sharedOptions,
             tabBarIcon: props => {

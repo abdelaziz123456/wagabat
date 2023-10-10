@@ -7,3 +7,4 @@ export {default as SearchStore} from './SearchStore/SearchStore';
 export {default as StoreListITem} from './StoreListITem/StoreListITem';
 export {default as ScreenHeader} from './ScreenHeader/ScreenHeader';
 export {default as ProductCard} from './ProdcutCard/ProdcutCard';
+export {default as OrdersHeader} from './OrdersHeader/OrdersHeader';
