@@ -1,5 +1,6 @@
 import {Images} from '@assets';
 import {ProductItemType} from './types';
+import {DeliveryItemType} from './props';
 
 export const restaurantsAndCafes = [
   {
@@ -336,4 +337,55 @@ export const products: ProductItemType[] = [
       'https://hips.hearstapps.com/hmg-prod/images/green-tea-wight-loss-1643990040.jpg?crop=0.665xw:1.00xh;0.291xw,0&resize=1200:*',
   },
   // Add more products with descriptions
+];
+
+export const DeliveryOrdersData: DeliveryItemType[] = [
+  {
+    id: 1,
+    status: 'Preparing',
+    fromAddress: '13 Han Thuyen, D.1, HCM city',
+    toAddress: '285 CMT8, D.10, HCM city',
+    orders: [
+      {name: 'Capuccino', number: 1, note: 'Smoky'},
+      {name: 'hamburger', number: 3},
+    ],
+    totalCost: 344,
+    date: '20/04/2020, 04:20',
+  },
+  {
+    id: 2,
+    status: 'Delivering',
+    fromAddress: '13 Han Thuyen, D.1, HCM city',
+    toAddress: '285 CMT8, D.10, HCM city',
+    orders: [
+      {name: 'Capuccino', number: 1, note: 'Smoky'},
+      {name: 'hamburger', number: 3, note: ''},
+    ],
+    totalCost: 344,
+    date: '20/04/2020, 06:20',
+  },
+  {
+    id: 3,
+    status: 'Delivered',
+    fromAddress: '13 Han Thuyen, D.1, HCM city',
+    toAddress: '285 CMT8, D.10, HCM city',
+    orders: [
+      {name: 'Capuccino', number: 1, note: 'Smoky'},
+      {name: 'hamburger', number: 3, note: ''},
+    ],
+    totalCost: 344,
+    date: '20/04/2020, 06:20',
+  },
+  {
+    id: 4,
+    status: 'Delivery failed',
+    fromAddress: '13 Han Thuyen, D.1, HCM city',
+    toAddress: '285 CMT8, D.10, HCM city',
+    orders: [
+      {name: 'Capuccino', number: 1, note: 'Smoky'},
+      {name: 'hamburger', number: 3, note: ''},
+    ],
+    totalCost: 344,
+    date: '20/04/2020, 06:20',
+  },
 ];

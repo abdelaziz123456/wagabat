@@ -11,7 +11,6 @@ export default StyleSheet.create({
   },
   headerTitle: {
     color: 'black',
-    fontFamily: 'Inter',
     fontWeight: '700',
     lineHeight: 27,
     fontSize: 18,

@@ -11,4 +11,5 @@ export const CustomColors = {
   dark90: '#46505D',
   dark80: '#6A798A',
   dark60: '#B3BFCB',
+  white: '#FFFFFF',
 };
