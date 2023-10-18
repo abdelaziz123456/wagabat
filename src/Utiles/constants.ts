@@ -12,4 +12,6 @@ export const CustomColors = {
   dark80: '#6A798A',
   dark60: '#B3BFCB',
   white: '#FFFFFF',
+  textPrimary: '#27272A',
+  dividerColor: '#EBEBF0',
 };

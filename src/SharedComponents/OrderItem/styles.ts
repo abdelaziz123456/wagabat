@@ -19,4 +19,39 @@ export default StyleSheet.create({
     fontSize: 12,
     lineHeight: 18,
   },
+  content: {
+    marginTop: 12,
+  },
+  locationItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 8,
+  },
+  borderBottom: {
+    borderBottomColor: CustomColors.dividerColor,
+    borderBottomWidth: 1,
+  },
+  addImage: {
+    width: 24,
+    height: 24,
+    marginRight: 8,
+  },
+  addressText: {
+    color: CustomColors.textPrimary,
+    fontSize: 14,
+    lineHeight: 21,
+  },
+  detailsContainer: {
+    paddingVertical: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  detailsText: {
+    color: CustomColors.textPrimary,
+    lineHeight: 21,
+  },
+  priceText: {
+    color: CustomColors.textPrimary,
+    fontWeight: '700',
+  },
 });

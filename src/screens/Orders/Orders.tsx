@@ -1,7 +1,7 @@
 import {FlatList, View} from 'react-native';
 import React, {useState} from 'react';
 import {OrderItem, TabGroup} from '@SharedComponents/index';
-import {DeliveryOrdersData} from '@Utiles/fakeData';
+import {DeliveryOrdersData, StorePickupData} from '@Utiles/fakeData';
 import styles from './Orders.styles';
 export default function Orders() {
   const [activeTab, setActiveTab] = useState(1);
@@ -21,7 +21,7 @@ export default function Orders() {
       <TabGroup setActiveTab={setActiveTab} tabs={tabs} activeTab={activeTab} />
       <View style={styles.ordersContainer}>
         <FlatList
-          data={DeliveryOrdersData}
+          data={activeTab == 1 ? StorePickupData : DeliveryOrdersData}
           renderItem={({item}) => {
             return <OrderItem order={item} />;
           }}

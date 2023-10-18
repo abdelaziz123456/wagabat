@@ -29,6 +29,9 @@ export const Images = {
     phoneIcon: require('./icons/phone.png'),
     addressIcon: require('./icons/address.png'),
     historyIcon: require('./icons/historyIcon.png'),
+    market: require('./icons/market.png'),
+    locationGreen: require('./icons/locationGreen.png'),
+    timerOrange: require('./icons/timerOrange.png'),
   },
   products: {
     arabica: require('./images/products/arabica.png'),
