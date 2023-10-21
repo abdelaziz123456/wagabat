@@ -1,4 +1,5 @@
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {DeliveryItemType} from './props';
 
 export type AuthStackParamList = {
   orders: undefined;
@@ -17,7 +18,10 @@ export type UnAuthStackParamList = {
 export type OrdersStackParamList = {
   ordersScreen: undefined;
   ordersHistory: undefined;
-  orderDetails: undefined;
+  orderDetails: {
+    orderID: string;
+    order: DeliveryItemType;
+  };
 };
 
 export type AuthStackNavigationProp =

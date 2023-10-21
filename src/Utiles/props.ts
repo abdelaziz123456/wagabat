@@ -6,7 +6,7 @@ export type SearchStoreProps = {
 };
 
 export type DeliveryItemType = {
-  id: number;
+  id: string;
   status:
     | 'Preparing'
     | 'Delivering'

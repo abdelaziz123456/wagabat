@@ -15,6 +15,13 @@ export const Images = {
   food1: require('./images/food1.jpg'),
   food2: require('./images/food2.jpg'),
   food3: require('./images/food3.jpg'),
+  preparingCover: require('./images/preparingCover.png'),
+  deliveringCover: require('./images/deliveringCover.png'),
+  deliveryFailedCover: require('./images/deliveryFailedCover.png'),
+  deliveredCover: require('./images/deliveredCover.png'),
+  readyCover: require('./images/readyForPickupCover.png'),
+  orderReceivedCover: require('./images/orderReceivedCover.png'),
+  orderCompletedCover: require('./images/orderCompletedCover.png'),
   icons: {
     backButton: require('./icons/backBtn.png'),
     expand: require('./icons/expand.png'),

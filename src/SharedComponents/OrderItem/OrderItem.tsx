@@ -1,13 +1,23 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, Pressable} from 'react-native';
 import React from 'react';
 import {DeliveryItemType} from '@Utiles/props';
 import styles from './styles';
 import {StatusPill} from '..';
 import {Images} from '@assets/index';
+import {useNavigation} from '@react-navigation/native';
+import {OrdersStackNavigationProp} from '@Utiles/navigatorTypes';
 
 const OrderItem = ({order}: {order: DeliveryItemType}) => {
+  const navigation = useNavigation<OrdersStackNavigationProp>();
   return (
-    <View style={styles.mainContainer}>
+    <Pressable
+      style={styles.mainContainer}
+      onPress={() => {
+        navigation.navigate('orderDetails', {
+          orderID: String(order.id),
+          order: order,
+        });
+      }}>
       <View style={styles.headerContainer}>
         <StatusPill status={order.status} />
         <Text style={styles.date}>{order.date}</Text>
@@ -35,6 +45,7 @@ const OrderItem = ({order}: {order: DeliveryItemType}) => {
             {order.orders.map(order => {
               return (
                 <Text
+                  key={order.number}
                   style={
                     styles.detailsText
                   }>{`${order.name} (X${order.number}), ${order?.note}`}</Text>
@@ -46,7 +57,7 @@ const OrderItem = ({order}: {order: DeliveryItemType}) => {
           </View>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

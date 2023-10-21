@@ -19,7 +19,7 @@ const OrdersStack = () => {
         component={OrderDetails}
         name={'orderDetails'}
         options={{
-          header: () => <OrdersHeader headerTitle="Orders Details" />,
+          headerShown: false,
         }}
       />
       <Stack.Screen component={OrdersHistory} name={'ordersHistory'} />

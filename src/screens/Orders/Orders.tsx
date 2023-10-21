@@ -23,7 +23,7 @@ export default function Orders() {
         <FlatList
           data={activeTab == 1 ? StorePickupData : DeliveryOrdersData}
           renderItem={({item}) => {
-            return <OrderItem order={item} />;
+            return <OrderItem order={item} key={item.id} />;
           }}
         />
       </View>

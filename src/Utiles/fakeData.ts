@@ -207,7 +207,7 @@ export const restaurantsAndCafes = [
 
 export const products: ProductItemType[] = [
   {
-    id: 1,
+    id: '247-96024',
     name: 'Pizza',
     price: 100,
     image: Images.products.pizza,
@@ -217,7 +217,7 @@ export const products: ProductItemType[] = [
       'https://img.freepik.com/premium-photo/close-up-view-baked-homemade-piza-rustic-pizza-home-made-food-tasty-pizza-with-vegetables-basil_87555-10790.jpg?w=2000',
   },
   {
-    id: 2,
+    id: '123-31424',
     name: 'Pure black',
     price: 120,
     image: Images.products.PureBlack,
@@ -227,7 +227,7 @@ export const products: ProductItemType[] = [
       'https://img.freepik.com/premium-photo/close-up-view-baked-homemade-piza-rustic-pizza-home-made-food-tasty-pizza-with-vegetables-basil_87555-10790.jpg?w=2000',
   },
   {
-    id: 3,
+    id: '417-02324',
     name: 'Latte',
     price: 450,
     image: Images.products.latte,
@@ -237,7 +237,7 @@ export const products: ProductItemType[] = [
       'https://www.allrecipes.com/thmb/Wh0Qnynwdxok4oN0NZ1Lz-wl0A8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9428203-9d140a4ed1424824a7ddd358e6161473.jpg',
   },
   {
-    id: 4,
+    id: '097-23424',
     name: 'Arabica',
     price: 320,
     image: Images.products.arabica,
@@ -247,7 +247,7 @@ export const products: ProductItemType[] = [
       'https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=0.668xw:1.00xh;0.0680xw,0&resize=1200:*',
   },
   {
-    id: 5,
+    id: '123-34324',
     name: 'Burger',
     price: 370,
     image: Images.products.burger,
@@ -257,7 +257,7 @@ export const products: ProductItemType[] = [
       'https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Cheeseburger-3d7c922.jpg',
   },
   {
-    id: 6,
+    id: '564-33224',
     name: 'Capuccino',
     price: 210,
     image: Images.products.capuccino,
@@ -267,7 +267,7 @@ export const products: ProductItemType[] = [
       'https://a-static.mlcdn.com.br/450x450/taca-de-capuccino-cafe-chocolate-xicara-1-peca-fratelli/casabr/99755898dc0411ebb1e14201ac18500e/cdad2b09038dd14749051c9db54872fb.jpeg',
   },
   {
-    id: 7,
+    id: '009-34324',
     name: 'Rebusta',
     price: 190,
     image: Images.products.rebusta,
@@ -277,7 +277,7 @@ export const products: ProductItemType[] = [
       'https://pristineorganics.com/wp-content/uploads/2020/01/Front-4.jpg',
   },
   {
-    id: 8,
+    id: '039-32124',
     name: 'Samosa',
     price: 120,
     image: Images.products.samosa,
@@ -288,7 +288,7 @@ export const products: ProductItemType[] = [
       'https://www.sainsburysmagazine.co.uk/uploads/media/720x770/06/12266-samosas.jpg?v=1-0',
   },
   {
-    id: 9,
+    id: '111-32124',
     name: 'Namkeen',
     price: 190,
     image: Images.products.namkeen,
@@ -297,7 +297,7 @@ export const products: ProductItemType[] = [
     cover: 'https://5.imimg.com/data5/LL/XG/MY-23223301/namkeens-500x500.jpg',
   },
   {
-    id: 10,
+    id: '219-32124',
     name: 'Danish',
     price: 250,
     image: Images.products.truffle,
@@ -307,7 +307,7 @@ export const products: ProductItemType[] = [
       'https://3brothersbakery.com/wp-content/uploads/2018/05/CheeseDanish_01-scaled.jpg',
   },
   {
-    id: 11,
+    id: '039-32121',
     name: 'Truffle',
     price: 430,
     image: Images.products.danish,
@@ -317,7 +317,7 @@ export const products: ProductItemType[] = [
       'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Glazed_apple_Danish.jpg/1200px-Glazed_apple_Danish.jpg',
   },
   {
-    id: 12,
+    id: '031-32121',
     name: 'Tea',
     price: 110,
     image: Images.products.tea,
@@ -327,7 +327,7 @@ export const products: ProductItemType[] = [
       'https://cdn.shopify.com/s/files/1/0560/1699/4381/articles/BC_2B-_2BAssam_2B_28cup_29_2B_281055_29.jpg?v=1664455870',
   },
   {
-    id: 13,
+    id: '039-34121',
     name: 'Green Tea',
     price: 130,
     image: Images.products.greenTea,
@@ -341,7 +341,7 @@ export const products: ProductItemType[] = [
 
 export const DeliveryOrdersData: DeliveryItemType[] = [
   {
-    id: 1,
+    id: '039-32121',
     status: 'Preparing',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -354,7 +354,7 @@ export const DeliveryOrdersData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 2,
+    id: '129-32121',
     status: 'Delivering',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -367,7 +367,7 @@ export const DeliveryOrdersData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 3,
+    id: '030-33321',
     status: 'Preparing',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -380,7 +380,7 @@ export const DeliveryOrdersData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 4,
+    id: '666-32321',
     status: 'Delivering',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -395,7 +395,7 @@ export const DeliveryOrdersData: DeliveryItemType[] = [
 ];
 export const StorePickupData: DeliveryItemType[] = [
   {
-    id: 1,
+    id: '129-32121',
     status: 'Order received',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '10:00, Today',
@@ -408,7 +408,7 @@ export const StorePickupData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 2,
+    id: '231-23021',
     status: 'Ready for pickup',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '12:30, Today',
@@ -421,7 +421,7 @@ export const StorePickupData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 3,
+    id: '111-32021',
     status: 'Order received',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '05:30, Today',
@@ -434,7 +434,7 @@ export const StorePickupData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 4,
+    id: '231-23121',
     status: 'Ready for pickup',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '16:30, Today',
@@ -450,7 +450,7 @@ export const StorePickupData: DeliveryItemType[] = [
 
 export const OrdersHistoryData: DeliveryItemType[] = [
   {
-    id: 1,
+    id: '111-31121',
     status: 'Delivered',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -463,7 +463,7 @@ export const OrdersHistoryData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 2,
+    id: '222-32221',
     status: 'Delivery failed',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -476,7 +476,7 @@ export const OrdersHistoryData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 3,
+    id: '039-32121',
     status: 'Delivered',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -489,7 +489,7 @@ export const OrdersHistoryData: DeliveryItemType[] = [
     type: 'delivery',
   },
   {
-    id: 4,
+    id: '123-32323',
     status: 'Delivery failed',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     toAddress: '285 CMT8, D.10, HCM city',
@@ -505,7 +505,7 @@ export const OrdersHistoryData: DeliveryItemType[] = [
 
 export const StorePickupHistoryData: DeliveryItemType[] = [
   {
-    id: 1,
+    id: '039-32121',
     status: 'Order completed',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '10:00, Today',
@@ -518,7 +518,7 @@ export const StorePickupHistoryData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 2,
+    id: '111-23121',
     status: 'Order completed',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '12:30, Today',
@@ -531,7 +531,7 @@ export const StorePickupHistoryData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 3,
+    id: '022-32821',
     status: 'Order completed',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '05:30, Today',
@@ -544,7 +544,7 @@ export const StorePickupHistoryData: DeliveryItemType[] = [
     type: 'storePickup',
   },
   {
-    id: 4,
+    id: '231-32221',
     status: 'Ready for pickup',
     fromAddress: '13 Han Thuyen, D.1, HCM city',
     pickupTime: '16:30, Today',

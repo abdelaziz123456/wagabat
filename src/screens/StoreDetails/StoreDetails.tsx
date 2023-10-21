@@ -1,5 +1,5 @@
 import {View, Text, Image, Pressable, ScrollView} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {restaurantsAndCafes} from '@Utiles/fakeData';
 import {useNavigation} from '@react-navigation/native';
 import {CardBase} from '@SharedComponents/index';
@@ -10,6 +10,7 @@ import {useSelector, useDispatch} from 'react-redux';
 
 import {Images} from '@assets';
 import {like_rest, unlike_rest} from '@Store/actions';
+import {CustomColors} from '@Utiles/constants';
 
 type Props = {
   route: any;
@@ -24,6 +25,17 @@ export default function StoreDetails({route}: Props) {
 
   const [liked, setLiked] = useState(() => checkLiked(likedRests, targetID));
   const dispatch = useDispatch();
+  const navigation = useNavigation();
+  useEffect(() => {
+    navigation
+      .getParent()
+      ?.setOptions({tabBarStyle: {display: 'none'}, tabBarVisible: false});
+    return () =>
+      navigation.getParent()?.setOptions({
+        tabBarStyle: {backgroundColor: CustomColors.bgGrey, height: 80},
+        tabBarVisible: undefined,
+      });
+  }, [navigation]);
 
   return (
     <View style={{paddingHorizontal: 16}}>
