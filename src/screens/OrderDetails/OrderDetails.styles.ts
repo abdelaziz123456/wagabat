@@ -58,4 +58,32 @@ export default StyleSheet.create({
     color: CustomColors.textPrimary,
     marginBottom: 8,
   },
+  generalDetailsWrapper: {
+    backgroundColor: CustomColors.white,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+  },
+  generalInfoCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+
+    paddingVertical: 8,
+  },
+  generalInfoRight: {
+    fontWeight: '700',
+    lineHeight: 21,
+    color: CustomColors.textPrimary,
+  },
+  shippingDetailsCard: {
+    paddingVertical: 8,
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+  },
+  cardIcon: {
+    width: 20,
+    height: 20,
+    marginRight: 8,
+    marginTop: 2,
+  },
+  primaryText: {color: CustomColors.textPrimary},
 });
