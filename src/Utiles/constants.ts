@@ -14,4 +14,5 @@ export const CustomColors = {
   white: '#FFFFFF',
   textPrimary: '#27272A',
   dividerColor: '#EBEBF0',
+  success: '#00AB56',
 };

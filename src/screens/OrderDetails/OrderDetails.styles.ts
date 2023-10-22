@@ -2,7 +2,9 @@ import {CustomColors} from '@Utiles/constants';
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  mainContainer: {},
+  mainContainer: {
+    paddingBottom: 16,
+  },
   headerContainer: {
     height: 56,
     backgroundColor: CustomColors.white,
@@ -62,6 +64,7 @@ export default StyleSheet.create({
     backgroundColor: CustomColors.white,
     paddingVertical: 16,
     paddingHorizontal: 16,
+    borderRadius: 8,
   },
   generalInfoCard: {
     flexDirection: 'row',
@@ -86,4 +89,14 @@ export default StyleSheet.create({
     marginTop: 2,
   },
   primaryText: {color: CustomColors.textPrimary},
+  paymentWrapper: {
+    padding: 16,
+    backgroundColor: CustomColors.white,
+    flexDirection: 'row',
+    borderRadius: 8,
+  },
+  productContainer: {
+    padding: 16,
+    backgroundColor: CustomColors.white,
+  },
 });

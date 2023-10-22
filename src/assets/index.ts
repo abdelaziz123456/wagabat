@@ -1,4 +1,5 @@
 export const Images = {
+  contactCover: require('./images/supportCover.png'),
   noResult: require('./images/noResult.png'),
   camp1: require('./images/camp1.png'),
   camp2: require('./images/camp2.png'),
@@ -39,6 +40,7 @@ export const Images = {
     market: require('./icons/market.png'),
     locationGreen: require('./icons/locationGreen.png'),
     timerOrange: require('./icons/timerOrange.png'),
+    momoIcon: require('./icons/momo.png'),
   },
   products: {
     arabica: require('./images/products/arabica.png'),
