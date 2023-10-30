@@ -3,7 +3,7 @@ export {default as AuthScreen} from './AuthScreen/AuthScreen';
 export {default as HomeScreen} from './HomeScreen/HomeScreen';
 export {default as DeliveryScreen} from './DeliveryScreen/DeliveryScreen';
 export {default as ReserveTable} from './ReserveTable/ReserveTable';
-export {default as Reservations} from './ReserveTable/ReserveTable';
+export {default as Reservations} from './Reservations/Reservations';
 export {default as StorePickupScreen} from './StorePickupScreen/StorePickupScreen';
 export {default as Profile} from './Profile/Profile';
 export {default as Stores} from './Stores/Stores';

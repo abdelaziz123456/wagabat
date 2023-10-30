@@ -23,6 +23,8 @@ export const Images = {
   readyCover: require('./images/readyForPickupCover.png'),
   orderReceivedCover: require('./images/orderReceivedCover.png'),
   orderCompletedCover: require('./images/orderCompletedCover.png'),
+  reservationBG: require('./images/reservationBG.png'),
+  reservsBG: require('./images/reservsBG.png'),
   icons: {
     backButton: require('./icons/backBtn.png'),
     expand: require('./icons/expand.png'),

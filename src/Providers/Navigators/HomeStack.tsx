@@ -9,6 +9,8 @@ import {
 import React from 'react';
 import {CustomColors} from '@Utiles/constants';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {CustomHeader} from '@SharedComponents/index';
+import {useNavigation} from '@react-navigation/native';
 const Stack = createNativeStackNavigator();
 let sharedOptions = {
   headerShown: false,
@@ -21,6 +23,7 @@ let sharedOptions = {
   },
 };
 export function HomeNavigation() {
+  const navigation = useNavigation();
   return (
     <Stack.Navigator
       screenOptions={{
@@ -39,15 +42,32 @@ export function HomeNavigation() {
         component={ReserveTable}
         options={{
           ...sharedOptions,
-          headerShown: true,
+          headerShown: false,
         }}
       />
+
       <Stack.Screen
         name="reservations"
         component={Reservations}
         options={{
           ...sharedOptions,
+          title: 'My reservations',
+          headerLeft: undefined,
           headerShown: true,
+          headerTitle: () => {
+            return (
+              <CustomHeader
+                headerTitle="My reservations"
+                withBackIcon={true}
+                pressHandler={() => {
+                  navigation.goBack();
+                }}
+              />
+            );
+          },
+          headerTitleAlign: 'left',
+          headerTitleStyle: {},
+          headerBackVisible: false,
         }}
       />
       <Stack.Screen

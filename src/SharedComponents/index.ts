@@ -9,3 +9,5 @@ export {default as TabGroup} from './TabGroup/TabGroup';
 export {default as OrderItem} from './OrderItem/OrderItem';
 export {default as StatusPill} from './StatusPill/StatusPill';
 export {default as Divider} from './Divider/Divider';
+export {default as CustomHeader} from './CustomHeader/CustomHeader';
+export {default as ReseveItem} from './ReseveItem/ReseveItem';

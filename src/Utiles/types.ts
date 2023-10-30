@@ -9,3 +9,11 @@ export type ProductItemType = {
   description: string;
   cover: string;
 };
+
+export type ReserveItemType = {
+  id: number;
+  address: string;
+  no: number;
+  time: string;
+  status: 'Reserved' | 'Canceled' | 'Past';
+};

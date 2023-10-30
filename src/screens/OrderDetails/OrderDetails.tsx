@@ -197,7 +197,11 @@ const OrderDetails = ({route}: Props) => {
           </View>
         </View>
       </View>
-      <SupportModal setVisible={setVisible} isVisible={isVisible} />
+      <SupportModal
+        setVisible={setVisible}
+        isVisible={isVisible}
+        address={order.toAddress}
+      />
     </ScrollView>
   );
 };

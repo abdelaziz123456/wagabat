@@ -1,5 +1,5 @@
 import {Images} from '@assets';
-import {ProductItemType} from './types';
+import {ProductItemType, ReserveItemType} from './types';
 import {DeliveryItemType} from './props';
 
 export const restaurantsAndCafes = [
@@ -555,5 +555,50 @@ export const StorePickupHistoryData: DeliveryItemType[] = [
     totalCost: 770,
     date: '20/04/2020, 06:20',
     type: 'storePickup',
+  },
+];
+
+export const ReservationsData: ReserveItemType[] = [
+  {
+    id: 1,
+    address: 'SB CMT8',
+    no: 2,
+    time: 'Today 14/02, 13:00',
+    status: 'Reserved',
+  },
+  {
+    id: 2,
+    address: 'SB Han Thuyen',
+    no: 4,
+    time: 'Sun 13/02, 18:00',
+    status: 'Past',
+  },
+  {
+    id: 3,
+    address: 'SB Han Thuyen',
+    no: 2,
+    time: 'Sun 10/04, 18:00',
+    status: 'Canceled',
+  },
+  {
+    id: 4,
+    address: 'SB CMT8',
+    no: 2,
+    time: 'Today 14/02, 13:00',
+    status: 'Reserved',
+  },
+  {
+    id: 5,
+    address: 'SB Han Thuyen',
+    no: 4,
+    time: 'Sun 13/02, 18:00',
+    status: 'Past',
+  },
+  {
+    id: 6,
+    address: 'SB Han Thuyen',
+    no: 2,
+    time: 'Sun 10/04, 18:00',
+    status: 'Canceled',
   },
 ];

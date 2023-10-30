@@ -14,19 +14,25 @@ export default function HomeHeader({expand, setExpand}: Props) {
       <View style={{flexDirection: 'row'}}>
         <Image source={Images.icons.userIcon} style={{marginRight: 14}} />
         <View>
-          <Text style={{fontSize: 14, fontWeight: '400'}}>welcome to </Text>
-          <Text style={{fontSize: 14, fontWeight: '700'}}>Wagabat App </Text>
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: '400',
+              color: CustomColors.textPrimary,
+            }}>
+            welcome to
+          </Text>
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: '700',
+              color: CustomColors.textPrimary,
+            }}>
+            Wagabat App
+          </Text>
         </View>
       </View>
-      <View
-        onTouchEnd={() => setExpand(!expand)}
-        style={{
-          backgroundColor: CustomColors.bgGrey2,
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: 40,
-          borderRadius: 20,
-        }}>
+      <View onTouchEnd={() => setExpand(!expand)} style={styles.expandIcon}>
         <Image source={icon} style={{width: 15, height: 15}} />
       </View>
     </View>

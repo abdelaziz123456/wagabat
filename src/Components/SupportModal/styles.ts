@@ -4,7 +4,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     backgroundColor: 'white',
-    height: 296,
+    minHeight: 296,
   },
   title: {
     fontWeight: '700',
@@ -21,5 +21,13 @@ export default StyleSheet.create({
   },
   detailsWrapper: {
     paddingHorizontal: 16,
+  },
+  primaryText: {
+    color: CustomColors.textPrimary,
+  },
+  btnText: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: CustomColors.blue100,
   },
 });
