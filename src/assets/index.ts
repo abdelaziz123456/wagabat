@@ -43,6 +43,8 @@ export const Images = {
     locationGreen: require('./icons/locationGreen.png'),
     timerOrange: require('./icons/timerOrange.png'),
     momoIcon: require('./icons/momo.png'),
+    avatar: require('./icons/avatar.png'),
+    clock: require('./icons/clock.png'),
   },
   products: {
     arabica: require('./images/products/arabica.png'),
