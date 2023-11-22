@@ -9,3 +9,4 @@ export {default as ScreenHeader} from './ScreenHeader/ScreenHeader';
 export {default as ProductCard} from './ProdcutCard/ProdcutCard';
 export {default as OrdersHeader} from './OrdersHeader/OrdersHeader';
 export {default as SupportModal} from './SupportModal/SupportModal';
+export {default as ShowLocation} from './ShowLocation/ShowLocation';

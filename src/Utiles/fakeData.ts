@@ -12,6 +12,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest1.jpg'),
     openAt: '19:00',
     closeAt: '18:00',
+    region: {
+      latitude: 37.78825,
+      longitude: -122.4324,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.78825,
+      longitude: -122.4324,
+    },
   },
   {
     id: 2,
@@ -22,6 +32,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest2.jpg'),
     openAt: '11:00',
     closeAt: '16:00',
+    region: {
+      latitude: 37.789,
+      longitude: -122.434,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.792,
+      longitude: -122.431,
+    },
   },
   {
     id: 3,
@@ -32,6 +52,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest3.jpg'),
     openAt: '06:00',
     closeAt: '02:00',
+    region: {
+      latitude: 37.7895,
+      longitude: -122.433,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.79,
+      longitude: -122.436,
+    },
   },
   {
     id: 4,
@@ -42,6 +72,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest4.jpg'),
     openAt: '05:00',
     closeAt: '01:00',
+    region: {
+      latitude: 37.7888,
+      longitude: -122.431,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.791,
+      longitude: -122.434,
+    },
   },
   {
     id: 5,
@@ -52,6 +92,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest5.jpg'),
     openAt: '06:00',
     closeAt: '22:00',
+    region: {
+      latitude: 37.787,
+      longitude: -122.435,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.789,
+      longitude: -122.432,
+    },
   },
   {
     id: 6,
@@ -62,6 +112,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest6.jpg'),
     openAt: '22:00',
     closeAt: '19:00',
+    region: {
+      latitude: 37.786,
+      longitude: -122.436,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.79,
+      longitude: -122.435,
+    },
   },
   {
     id: 7,
@@ -72,6 +132,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest7.jpg'),
     openAt: '03:00',
     closeAt: '11:00',
+    region: {
+      latitude: 37.787,
+      longitude: -122.434,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.788,
+      longitude: -122.436,
+    },
   },
   {
     id: 8,
@@ -82,6 +152,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest8.jpg'),
     openAt: '04:00',
     closeAt: '16:00',
+    region: {
+      latitude: 37.786,
+      longitude: -122.431,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.789,
+      longitude: -122.434,
+    },
   },
   {
     id: 9,
@@ -102,6 +182,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest10.jpg'),
     openAt: '20:00',
     closeAt: '15:00',
+    region: {
+      latitude: 37.787,
+      longitude: -122.434,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.79,
+      longitude: -122.432,
+    },
   },
   {
     id: 11,
@@ -112,6 +202,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest1.jpg'),
     openAt: '19:00',
     closeAt: '18:00',
+    region: {
+      latitude: 37.789,
+      longitude: -122.432,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.787,
+      longitude: -122.436,
+    },
   },
   {
     id: 12,
@@ -122,6 +222,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest2.jpg'),
     openAt: '11:00',
     closeAt: '16:00',
+    region: {
+      latitude: 37.78825,
+      longitude: -122.4324,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.791,
+      longitude: -122.43,
+    },
   },
   {
     id: 13,
@@ -132,6 +242,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest3.jpg'),
     openAt: '06:00',
     closeAt: '02:00',
+    region: {
+      latitude: 37.78825,
+      longitude: -122.4324,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.791,
+      longitude: -122.43,
+    },
   },
   {
     id: 14,
@@ -142,6 +262,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest4.jpg'),
     openAt: '05:00',
     closeAt: '01:00',
+    region: {
+      latitude: 37.789,
+      longitude: -122.434,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.792,
+      longitude: -122.431,
+    },
   },
   {
     id: 15,
@@ -152,6 +282,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest5.jpg'),
     openAt: '06:00',
     closeAt: '22:00',
+    region: {
+      latitude: 37.7895,
+      longitude: -122.433,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.79,
+      longitude: -122.436,
+    },
   },
   {
     id: 16,
@@ -162,6 +302,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest6.jpg'),
     openAt: '22:00',
     closeAt: '19:00',
+    region: {
+      latitude: 37.7888,
+      longitude: -122.431,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.791,
+      longitude: -122.434,
+    },
   },
   {
     id: 17,
@@ -172,6 +322,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest7.jpg'),
     openAt: '03:00',
     closeAt: '11:00',
+    region: {
+      latitude: 37.787,
+      longitude: -122.435,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.789,
+      longitude: -122.432,
+    },
   },
   {
     id: 18,
@@ -182,6 +342,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest8.jpg'),
     openAt: '04:00',
     closeAt: '16:00',
+    region: {
+      latitude: 37.786,
+      longitude: -122.436,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.79,
+      longitude: -122.435,
+    },
   },
   {
     id: 19,
@@ -192,6 +362,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest9.jpg'),
     openAt: '05:00',
     closeAt: '05:00',
+    region: {
+      latitude: 37.786,
+      longitude: -122.431,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.789,
+      longitude: -122.434,
+    },
   },
   {
     id: 20,
@@ -202,6 +382,16 @@ export const restaurantsAndCafes = [
     imageLink: require('../assets/images/restaurants/rest10.jpg'),
     openAt: '20:00',
     closeAt: '15:00',
+    region: {
+      latitude: 37.789,
+      longitude: -122.432,
+      latitudeDelta: 0.015,
+      longitudeDelta: 0.0121,
+    },
+    coordinate: {
+      latitude: 37.787,
+      longitude: -122.436,
+    },
   },
 ];
 

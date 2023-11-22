@@ -1,11 +1,13 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [GMSServices provideAPIKey:@"AIzaSyAnZExUYm2twOTq8EKDw9Nh1rYldYLEycQ"]; // add this line using the api key obtained from Google Console
   self.moduleName = @"wagabat";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.

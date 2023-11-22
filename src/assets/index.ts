@@ -45,6 +45,7 @@ export const Images = {
     momoIcon: require('./icons/momo.png'),
     avatar: require('./icons/avatar.png'),
     clock: require('./icons/clock.png'),
+    marker: require('./icons/marker.png'),
   },
   products: {
     arabica: require('./images/products/arabica.png'),

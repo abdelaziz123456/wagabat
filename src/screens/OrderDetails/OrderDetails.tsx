@@ -30,6 +30,7 @@ const OrderDetails = ({route}: Props) => {
       ?.setOptions({tabBarStyle: {display: 'none'}, tabBarVisible: false});
     return () =>
       navigation.getParent()?.setOptions({
+        tabBarStyle: {backgroundColor: CustomColors.bgGrey, height: 80},
         tabBarVisible: undefined,
       });
   }, [navigation]);
