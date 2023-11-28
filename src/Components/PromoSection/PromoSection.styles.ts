@@ -16,4 +16,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     flexWrap: 'wrap',
   },
+  lottieView: {
+    height: 50,
+    width: 50,
+  },
 });

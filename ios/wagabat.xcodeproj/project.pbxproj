@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* wagabatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wagabatTests.m */; };
+		0A6AA7CC2EAD92CB3A64591D /* libPods-wagabat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD395EBA45780DA576FCE6D /* libPods-wagabat.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		167A4DB53CE6F8425624F49A /* libPods-wagabat-wagabatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24496327AA30B2ABB9A587D6 /* libPods-wagabat-wagabatTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		972B532214ADBBC81896B1F8 /* libPods-wagabat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5E4157809CB5B1551AC025 /* libPods-wagabat.a */; };
+		945844CF94D5C1C13DBD4E99 /* libPods-wagabat-wagabatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71F71F66F4E4CB60B34C3F3 /* libPods-wagabat-wagabatTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wagabat/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wagabat/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = wagabat/main.m; sourceTree = "<group>"; };
-		1D177F8C854A2F36CA22D6C8 /* Pods-wagabat-wagabatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat-wagabatTests.debug.xcconfig"; path = "Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		24496327AA30B2ABB9A587D6 /* libPods-wagabat-wagabatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wagabat-wagabatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1CAF4BC3A927AA883F6B6F /* Pods-wagabat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat.release.xcconfig"; path = "Target Support Files/Pods-wagabat/Pods-wagabat.release.xcconfig"; sourceTree = "<group>"; };
+		1D4989A9C3D217814F5F525D /* Pods-wagabat-wagabatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat-wagabatTests.debug.xcconfig"; path = "Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		206C9817C5371CFEFD99715F /* Pods-wagabat-wagabatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat-wagabatTests.release.xcconfig"; path = "Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wagabat/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D225EFA4E80C3D1828C31DA /* Pods-wagabat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat.debug.xcconfig"; path = "Target Support Files/Pods-wagabat/Pods-wagabat.debug.xcconfig"; sourceTree = "<group>"; };
-		A54C843E6A9B2C244C22C248 /* Pods-wagabat-wagabatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat-wagabatTests.release.xcconfig"; path = "Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests.release.xcconfig"; sourceTree = "<group>"; };
+		AEF51F7821A1D7F23ED528C7 /* Pods-wagabat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat.release.xcconfig"; path = "Target Support Files/Pods-wagabat/Pods-wagabat.release.xcconfig"; sourceTree = "<group>"; };
+		C71F71F66F4E4CB60B34C3F3 /* libPods-wagabat-wagabatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wagabat-wagabatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD395EBA45780DA576FCE6D /* libPods-wagabat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wagabat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C7B00CAC42D45F649743C3 /* Pods-wagabat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wagabat.debug.xcconfig"; path = "Target Support Files/Pods-wagabat/Pods-wagabat.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FA5E4157809CB5B1551AC025 /* libPods-wagabat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wagabat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167A4DB53CE6F8425624F49A /* libPods-wagabat-wagabatTests.a in Frameworks */,
+				945844CF94D5C1C13DBD4E99 /* libPods-wagabat-wagabatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972B532214ADBBC81896B1F8 /* libPods-wagabat.a in Frameworks */,
+				0A6AA7CC2EAD92CB3A64591D /* libPods-wagabat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FA5E4157809CB5B1551AC025 /* libPods-wagabat.a */,
-				24496327AA30B2ABB9A587D6 /* libPods-wagabat-wagabatTests.a */,
+				CAD395EBA45780DA576FCE6D /* libPods-wagabat.a */,
+				C71F71F66F4E4CB60B34C3F3 /* libPods-wagabat-wagabatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D225EFA4E80C3D1828C31DA /* Pods-wagabat.debug.xcconfig */,
-				5B1CAF4BC3A927AA883F6B6F /* Pods-wagabat.release.xcconfig */,
-				1D177F8C854A2F36CA22D6C8 /* Pods-wagabat-wagabatTests.debug.xcconfig */,
-				A54C843E6A9B2C244C22C248 /* Pods-wagabat-wagabatTests.release.xcconfig */,
+				D2C7B00CAC42D45F649743C3 /* Pods-wagabat.debug.xcconfig */,
+				AEF51F7821A1D7F23ED528C7 /* Pods-wagabat.release.xcconfig */,
+				1D4989A9C3D217814F5F525D /* Pods-wagabat-wagabatTests.debug.xcconfig */,
+				206C9817C5371CFEFD99715F /* Pods-wagabat-wagabatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "wagabatTests" */;
 			buildPhases = (
-				C70B5D85EBB1C6FAFBD22E73 /* [CP] Check Pods Manifest.lock */,
+				5701539973EC243182374C23 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C47FBBAE1269B6C5BF444B99 /* [CP] Embed Pods Frameworks */,
-				FA9FB870D0902E6594EDA5FD /* [CP] Copy Pods Resources */,
+				5FD24234352FEB33E823E93D /* [CP] Embed Pods Frameworks */,
+				4E78E999F2826CCCBFF14814 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wagabat" */;
 			buildPhases = (
-				04E7ABEF6095A655868DBD34 /* [CP] Check Pods Manifest.lock */,
+				4CE9F45ACCABA8425F7C2EA7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				35FA7568D005A44361CCB764 /* [CP] Embed Pods Frameworks */,
-				4E50AE0B8F5CCD84532FCF04 /* [CP] Copy Pods Resources */,
+				E0EA7F4C83C3DC3878F148BF /* [CP] Embed Pods Frameworks */,
+				51830313688A58003BABE108 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,7 +266,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		04E7ABEF6095A655868DBD34 /* [CP] Check Pods Manifest.lock */ = {
+		4CE9F45ACCABA8425F7C2EA7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,24 +288,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		35FA7568D005A44361CCB764 /* [CP] Embed Pods Frameworks */ = {
+		4E78E999F2826CCCBFF14814 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E50AE0B8F5CCD84532FCF04 /* [CP] Copy Pods Resources */ = {
+		51830313688A58003BABE108 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,24 +322,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C47FBBAE1269B6C5BF444B99 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C70B5D85EBB1C6FAFBD22E73 /* [CP] Check Pods Manifest.lock */ = {
+		5701539973EC243182374C23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,21 +344,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA9FB870D0902E6594EDA5FD /* [CP] Copy Pods Resources */ = {
+		5FD24234352FEB33E823E93D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat-wagabatTests/Pods-wagabat-wagabatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EA7F4C83C3DC3878F148BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wagabat/Pods-wagabat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D177F8C854A2F36CA22D6C8 /* Pods-wagabat-wagabatTests.debug.xcconfig */;
+			baseConfigurationReference = 1D4989A9C3D217814F5F525D /* Pods-wagabat-wagabatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +457,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A54C843E6A9B2C244C22C248 /* Pods-wagabat-wagabatTests.release.xcconfig */;
+			baseConfigurationReference = 206C9817C5371CFEFD99715F /* Pods-wagabat-wagabatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +481,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D225EFA4E80C3D1828C31DA /* Pods-wagabat.debug.xcconfig */;
+			baseConfigurationReference = D2C7B00CAC42D45F649743C3 /* Pods-wagabat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +508,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1CAF4BC3A927AA883F6B6F /* Pods-wagabat.release.xcconfig */;
+			baseConfigurationReference = AEF51F7821A1D7F23ED528C7 /* Pods-wagabat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -189,9 +189,9 @@ const ShowLocation = ({region, coordinate, customLabel}: Props) => {
     android: `${scheme}${latLng}(${label})`,
   });
   const openInMaps = () => {
-    Linking.canOpenURL(url).then(supported => {
+    Linking.canOpenURL(String(url)).then(supported => {
       if (supported) {
-        Linking.openURL(url);
+        Linking.openURL(String(url));
       } else {
         console.log("Don't know how to open URI: " + url);
       }

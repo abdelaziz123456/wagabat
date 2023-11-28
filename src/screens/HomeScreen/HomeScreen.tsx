@@ -1,4 +1,4 @@
-import {Animated, Easing, ScrollView} from 'react-native';
+import {Animated, RefreshControl, ScrollView} from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
 import styles from './HomeScreen.styles';
 
