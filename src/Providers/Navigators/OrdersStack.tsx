@@ -22,7 +22,13 @@ const OrdersStack = () => {
           headerShown: false,
         }}
       />
-      <Stack.Screen component={OrdersHistory} name={'ordersHistory'} />
+      <Stack.Screen
+        component={OrdersHistory}
+        name={'ordersHistory'}
+        options={{
+          header: () => <OrdersHeader headerTitle="Order history" />,
+        }}
+      />
     </Stack.Navigator>
   );
 };
