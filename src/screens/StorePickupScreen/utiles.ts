@@ -1,7 +1,6 @@
 import {Images} from '@assets';
 
 export const tabItems = [
-  {id: 1, title: 'Favourite'},
   {id: 2, title: 'Coffee'}, //
   {id: 3, title: 'Milk Tea'}, //
   {id: 4, title: 'Tea'},

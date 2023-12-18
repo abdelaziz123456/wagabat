@@ -39,7 +39,7 @@ export default function HomeScreen() {
         <UserCard />
       </Animated.View>
 
-      <StoreSection />
+      <StoreSection withoutNavigation />
       <ReserveSection />
       <PromoSection />
     </ScrollView>

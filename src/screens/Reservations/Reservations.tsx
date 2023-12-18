@@ -3,8 +3,6 @@ import React from 'react';
 import styles from './Reservations.styles';
 import {Images} from '@assets/index';
 import {CustomButton, ReserveItem} from '@SharedComponents/index';
-import {useNavigation} from '@react-navigation/native';
-import {AuthStackNavigationProp} from '@Utiles/navigatorTypes';
 import {ReservationsData} from '@Utiles/fakeData';
 import {ReserveItemType} from '@Utiles/types';
 type Props = {
@@ -12,7 +10,6 @@ type Props = {
 };
 export default function Reservations() {
   const reservationsData = ReservationsData;
-  const navigation = useNavigation<AuthStackNavigationProp>();
 
   return reservationsData.length ? (
     <View style={styles.dataContainer}>
@@ -31,9 +28,7 @@ export default function Reservations() {
       <View style={{width: '100%'}}>
         <CustomButton
           pressHandler={() => {
-            navigation.navigate('home', {
-              screen: 'reserve',
-            });
+            null;
           }}
           btnTheme="blue">
           <Text style={styles.btnText}>Reserve a table</Text>

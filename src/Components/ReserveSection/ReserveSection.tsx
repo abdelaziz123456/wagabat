@@ -20,11 +20,7 @@ export default function ReserveSection() {
           <Image source={Images.table} />
         </View>
         <View style={styles.lowerSection}>
-          <CustomButton
-            pressHandler={() =>
-              navigation.navigate('home', {screen: 'reserve'})
-            }
-            btnTheme={'outlined'}>
+          <CustomButton pressHandler={() => null} btnTheme={'outlined'}>
             <Image style={{marginRight: 10}} source={Images.timeTable} />
             <Text style={styles.btnText}>Reserve a table</Text>
           </CustomButton>

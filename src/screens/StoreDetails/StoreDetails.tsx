@@ -136,7 +136,7 @@ export default function StoreDetails({route}: Props) {
             </View>
           </View>
         </CardBase>
-        <StoreSection withoutNavigation={true} />
+        <StoreSection withoutNavigation />
         <ReserveSection />
         <CardBase customStyle={{paddingHorizontal: 16}}>
           <View style={{marginBottom: 16, flexDirection: 'row'}}>
